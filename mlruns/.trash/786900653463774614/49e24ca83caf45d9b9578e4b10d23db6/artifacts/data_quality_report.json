@@ -1,0 +1,170 @@
+{
+  "long": {
+    "path": "/Users/cirogam/Desktop/hea_hackathon/hea_competition/data/rand_hrs_long_sample.parquet",
+    "rows": 120000,
+    "unique_ids": 10000,
+    "waves": [
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14
+    ],
+    "rows_per_wave": {
+      "3": 10000,
+      "4": 10000,
+      "5": 10000,
+      "6": 10000,
+      "7": 10000,
+      "8": 10000,
+      "9": 10000,
+      "10": 10000,
+      "11": 10000,
+      "12": 10000,
+      "13": 10000,
+      "14": 10000
+    }
+  },
+  "model_table": {
+    "path": "/Users/cirogam/Desktop/hea_hackathon/hea_competition/data/rand_hrs_model_sample.parquet",
+    "rows": 100000
+  },
+  "missingness_per_feature": {
+    "wave": {
+      "count": 0,
+      "pct": 0.0
+    },
+    "AGEY_B": {
+      "count": 34380,
+      "pct": 34.38
+    },
+    "BMI": {
+      "count": 35316,
+      "pct": 35.32
+    },
+    "MSTAT": {
+      "count": 34456,
+      "pct": 34.46
+    },
+    "CESD": {
+      "count": 39037,
+      "pct": 39.04
+    },
+    "HIBPE": {
+      "count": 34380,
+      "pct": 34.38
+    },
+    "SHLT": {
+      "count": 34428,
+      "pct": 34.43
+    },
+    "MOBILA": {
+      "count": 34444,
+      "pct": 34.44
+    }
+  },
+  "step5_dropna": {
+    "rows_before": 100000,
+    "rows_after": 59967,
+    "rows_dropped": 40033
+  },
+  "target_balance": {
+    "target_DIABE": {
+      "non_missing": 44245,
+      "events": 2958,
+      "event_rate_pct": 6.69
+    },
+    "target_HIBPE": {
+      "non_missing": 26131,
+      "events": 4863,
+      "event_rate_pct": 18.61
+    },
+    "target_CANCR": {
+      "non_missing": 46509,
+      "events": 2986,
+      "event_rate_pct": 6.42
+    },
+    "target_LUNGE": {
+      "non_missing": 49324,
+      "events": 1875,
+      "event_rate_pct": 3.8
+    },
+    "target_HEARTE": {
+      "non_missing": 43036,
+      "events": 3882,
+      "event_rate_pct": 9.02
+    },
+    "target_STROKE": {
+      "non_missing": 50204,
+      "events": 1818,
+      "event_rate_pct": 3.62
+    },
+    "target_PSYCHE": {
+      "non_missing": 47123,
+      "events": 1857,
+      "event_rate_pct": 3.94
+    },
+    "target_ARTHRE": {
+      "non_missing": 23772,
+      "events": 4189,
+      "event_rate_pct": 17.62
+    }
+  },
+  "feature_stats": {
+    "wave": {
+      "min": 3.0,
+      "max": 12.0,
+      "mean": 7.5
+    },
+    "AGEY_B": {
+      "min": 22.0,
+      "max": 100.0,
+      "mean": 66.3458
+    },
+    "BMI": {
+      "min": 8.9,
+      "max": 82.7,
+      "mean": 27.8387
+    },
+    "MSTAT": {
+      "min": 1.0,
+      "max": 8.0,
+      "mean": 2.5844
+    },
+    "CESD": {
+      "min": 0.0,
+      "max": 8.0,
+      "mean": 1.3834
+    },
+    "HIBPE": {
+      "min": 0.0,
+      "max": 1.0,
+      "mean": 0.537
+    },
+    "SHLT": {
+      "min": 1.0,
+      "max": 5.0,
+      "mean": 2.829
+    },
+    "MOBILA": {
+      "min": 0.0,
+      "max": 5.0,
+      "mean": 1.0421
+    }
+  },
+  "X_final": {
+    "path": "/Users/cirogam/Desktop/hea_hackathon/hea_competition/data/X_minimal.parquet",
+    "rows": 59967
+  },
+  "y_conditions": {
+    "path": "/Users/cirogam/Desktop/hea_hackathon/hea_competition/data/y_conditions.parquet",
+    "rows": 59967
+  }
+}

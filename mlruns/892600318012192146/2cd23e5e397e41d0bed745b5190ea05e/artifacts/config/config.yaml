@@ -1,0 +1,16 @@
+# Diabetes-only run. Uses top_k features from feature_priority.csv.
+# If group_priority is set, features are picked round-robin by group (diversity).
+target_suffix: DIABE
+feature_priority: diseases/diabetes/feature_priority.csv
+group_priority: diseases/diabetes/group_priority.csv
+top_k: 8
+# Data subset: use sample_fraction (0-1, e.g. 0.8 for 80%) and/or sample_rows (absolute).
+# sample_seed (int) used when sample_fraction is set for reproducibility.
+# Omit both to use all rows.
+sample_fraction: null
+sample_rows: null
+mlflow_experiment: hea_diabetes
+# lgbm handles missing features natively (production-friendly). lr/rf require complete cases.
+model:
+  type: lgbm
+  params: {}

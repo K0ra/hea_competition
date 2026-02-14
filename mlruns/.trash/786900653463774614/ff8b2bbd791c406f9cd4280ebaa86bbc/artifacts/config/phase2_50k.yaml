@@ -1,0 +1,17 @@
+# Phase 2: More data (50k rows), same features and LR
+# Run: python scripts/run_experiment.py --config config/experiments/phase2_50k.yaml
+# Estimated time: ~4-10 min
+name: phase2_50k
+sample_rows: 50000
+feature_columns:
+  - wave
+  - AGEY_B
+  - BMI
+  - MSTAT
+  - CESD
+  - HIBPE
+  - SHLT
+  - MOBILA
+model:
+  type: lr
+  params: {}

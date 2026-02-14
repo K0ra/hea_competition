@@ -139,6 +139,9 @@ celerybeat.pid
 .envrc
 .venv
 env/
+# Project data (RAND HRS dataset and pipeline outputs)
+data/
+data/randhrs1992_2022v1_SAS/
 venv/
 ENV/
 env.bak/

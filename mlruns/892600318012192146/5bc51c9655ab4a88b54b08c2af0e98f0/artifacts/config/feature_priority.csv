@@ -1,0 +1,801 @@
+variable,score,reason,group
+BMI,100,Strong risk factor for type 2 diabetes; obesity,body_size
+AGEY_B,96,Age strongly associated with diabetes incidence,age
+HIBPE,94,Hypertension often comorbid with diabetes,hypertension
+BPSYS,91,Systolic BP; metabolic/cardiovascular risk,blood_pressure
+BPDIA,90,Diastolic BP; metabolic/cardiovascular risk,blood_pressure
+SHLT,89,Self-rated health reflects metabolic/overall risk,self_rated_health
+AGEY_E,88,Age at interview; diabetes risk increases with age,age
+AGEY_M,87,Age; diabetes risk,age
+wave,85,Needed for temporal train/val split,wave
+AGEM_B,78,Age in months; proxy for age,age
+AGEM_E,77,Age in months at interview,age
+AGEM_M,76,Age in months,age
+BPPOS,72,Blood pressure or cardiovascular measure,blood_pressure
+BPPULS,72,Blood pressure or cardiovascular measure,blood_pressure
+BWC20,70,Weight/height/body size; obesity-related,body_size
+BWC20P,70,Weight/height/body size; obesity-related,body_size
+BWC20W,70,Weight/height/body size; obesity-related,body_size
+BWC86,70,Weight/height/body size; obesity-related,body_size
+HLTHLM,68,Self-rated health or health perception,self_rated_health
+LBFAMHLTHPRB,68,Self-rated health or health perception,self_rated_health
+LBHLTHPRB,68,Self-rated health or health perception,self_rated_health
+LBSATHLTH,68,Self-rated health or health perception,self_rated_health
+SHLTC,68,Self-rated health or health perception,self_rated_health
+SHLTCF,68,Self-rated health or health perception,self_rated_health
+CESD,62,Depression associated with diabetes risk and self-care,depression
+CESDM,61,Depression scale; diabetes/behavior link,depression
+CACT,60,Physical activity; diabetes risk factor,physical_activity
+CACTP,60,Physical activity; diabetes risk factor,physical_activity
+FCACT,60,Physical activity; diabetes risk factor,physical_activity
+FCACTP,60,Physical activity; diabetes risk factor,physical_activity
+VIGACT,60,Physical activity; diabetes risk factor,physical_activity
+MSTAT,58,Marital status; health behaviors and access to care,demographics
+DEPCON,54,Depression-related item; diabetes/self-care link,depression
+DEPDOWN,54,Depression-related item; diabetes/self-care link,depression
+DEPEVD,54,Depression-related item; diabetes/self-care link,depression
+DEPHUN,54,Depression-related item; diabetes/self-care link,depression
+DEPLOS,54,Depression-related item; diabetes/self-care link,depression
+DEPNIT,54,Depression-related item; diabetes/self-care link,depression
+DEPNOAP,54,Depression-related item; diabetes/self-care link,depression
+DEPPOR,54,Depression-related item; diabetes/self-care link,depression
+DEPRECM,54,Depression-related item; diabetes/self-care link,depression
+DEPRES,54,Depression-related item; diabetes/self-care link,depression
+DEPREX,54,Depression-related item; diabetes/self-care link,depression
+DEPSLE,54,Depression-related item; diabetes/self-care link,depression
+DEPTHO,54,Depression-related item; diabetes/self-care link,depression
+DEPTIR,54,Depression-related item; diabetes/self-care link,depression
+DEPWKS,54,Depression-related item; diabetes/self-care link,depression
+DEPYR,54,Depression-related item; diabetes/self-care link,depression
+SMOKEN,54,Smoking; diabetes and cardiovascular risk,smoking
+SMOKEV,54,Smoking; diabetes and cardiovascular risk,smoking
+CHOLST,53,Cholesterol or medication; metabolic,cholesterol_med
+MOBILA,52,Mobility limitation; sedentary behavior and disease burden,mobility_balance
+BACK,51,Mobility or physical function,mobility_balance
+BALFUL,51,Mobility or physical function,mobility_balance
+BALFULC,51,Mobility or physical function,mobility_balance
+BALFULT,51,Mobility or physical function,mobility_balance
+BALSBS,51,Mobility or physical function,mobility_balance
+BALSBSC,51,Mobility or physical function,mobility_balance
+BALSEMI,51,Mobility or physical function,mobility_balance
+BALSEMIC,51,Mobility or physical function,mobility_balance
+CHAIR,51,Mobility or physical function,mobility_balance
+CHAIRA,51,Mobility or physical function,mobility_balance
+CHAIRW,51,Mobility or physical function,mobility_balance
+CLIM1,51,Mobility or physical function,mobility_balance
+CLIM1A,51,Mobility or physical function,mobility_balance
+CLIM1W,51,Mobility or physical function,mobility_balance
+CLIMS,51,Mobility or physical function,mobility_balance
+CLIMSA,51,Mobility or physical function,mobility_balance
+CLIMSW,51,Mobility or physical function,mobility_balance
+DCBAL1,51,Mobility or physical function,mobility_balance
+DCBAL2,51,Mobility or physical function,mobility_balance
+DCBAL3,51,Mobility or physical function,mobility_balance
+DCBAL4,51,Mobility or physical function,mobility_balance
+FDCBAL1,51,Mobility or physical function,mobility_balance
+FDCBAL2,51,Mobility or physical function,mobility_balance
+FDCBAL3,51,Mobility or physical function,mobility_balance
+FDCBAL4,51,Mobility or physical function,mobility_balance
+MOBILW,51,Mobility or physical function,mobility_balance
+ADL5A,50,ADL limitation; functional health,ADL_IADL
+ADL5H,49,ADL; functional health,ADL_IADL
+ADL6A,48,ADL; functional health,ADL_IADL
+BATH,48,Functional limitation; ADL/IADL,ADL_IADL
+BATHA,48,Functional limitation; ADL/IADL,ADL_IADL
+BATHH,48,Functional limitation; ADL/IADL,ADL_IADL
+BATHW,48,Functional limitation; ADL/IADL,ADL_IADL
+BED,48,Functional limitation; ADL/IADL,ADL_IADL
+BEDA,48,Functional limitation; ADL/IADL,ADL_IADL
+BEDE,48,Functional limitation; ADL/IADL,ADL_IADL
+BEDH,48,Functional limitation; ADL/IADL,ADL_IADL
+BEDW,48,Functional limitation; ADL/IADL,ADL_IADL
+DADLIV,48,Functional limitation; ADL/IADL,ADL_IADL
+DRESS,48,Functional limitation; ADL/IADL,ADL_IADL
+DRESSA,48,Functional limitation; ADL/IADL,ADL_IADL
+DRESSH,48,Functional limitation; ADL/IADL,ADL_IADL
+DRESSW,48,Functional limitation; ADL/IADL,ADL_IADL
+EAT,48,Functional limitation; ADL/IADL,ADL_IADL
+EATA,48,Functional limitation; ADL/IADL,ADL_IADL
+EATH,48,Functional limitation; ADL/IADL,ADL_IADL
+EATW,48,Functional limitation; ADL/IADL,ADL_IADL
+IADL5A,48,Functional limitation; ADL/IADL,ADL_IADL
+IADL5H,48,Functional limitation; ADL/IADL,ADL_IADL
+SADLF,48,Functional limitation; ADL/IADL,ADL_IADL
+TOILT,48,Functional limitation; ADL/IADL,ADL_IADL
+TOILTA,48,Functional limitation; ADL/IADL,ADL_IADL
+TOILTH,48,Functional limitation; ADL/IADL,ADL_IADL
+WALK1,48,Functional limitation; ADL/IADL,ADL_IADL
+WALK1A,48,Functional limitation; ADL/IADL,ADL_IADL
+WALK1W,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKR,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKRA,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKRE,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKRH,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKRW,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKS,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKSA,48,Functional limitation; ADL/IADL,ADL_IADL
+WALKSW,48,Functional limitation; ADL/IADL,ADL_IADL
+ADL6H,47,ADL; functional health,ADL_IADL
+ADLR10,46,ADL count; functional limitation,ADL_IADL
+ADLW,45,ADL; functional limitation,ADL_IADL
+DRINK,42,Alcohol; behavioral/cardiometabolic,demographics
+DRINKN,42,Alcohol; behavioral/cardiometabolic,demographics
+DRINKR,42,Alcohol; behavioral/cardiometabolic,demographics
+ALONE,38,Marital/living; social support and behavior,demographics
+MSTATF,38,Marital/living; social support and behavior,demographics
+MSTATH,38,Marital/living; social support and behavior,demographics
+CENDIV,32,Region; access to care and prevalence,demographics
+CENREG,32,Region; access to care and prevalence,demographics
+BEQ100,30,SES; access to care and health behavior,SES
+BEQ10K,30,SES; access to care and health behavior,SES
+BEQ500,30,SES; access to care and health behavior,SES
+BEQANY,30,SES; access to care and health behavior,SES
+BEQLRG,30,SES; access to care and health behavior,SES
+WLIPRM,30,SES; access to care and health behavior,SES
+WTHH,30,SES; access to care and health behavior,SES
+DSIAMT,28,SES; income/assets,SES
+DSSAMT,28,SES; income/assets,SES
+COG27,26,Cognition; possible confounder,cognition
+COGMODE,26,Cognition; possible confounder,cognition
+COGTOT,26,Cognition; possible confounder,cognition
+COGTOTP,26,Cognition; possible confounder,cognition
+DLRC,26,Cognition; possible confounder,cognition
+DLRC20,26,Cognition; possible confounder,cognition
+DLRCP,26,Cognition; possible confounder,cognition
+DLRCW,26,Cognition; possible confounder,cognition
+FDLRC,26,Cognition; possible confounder,cognition
+FDLRCP,26,Cognition; possible confounder,cognition
+FDLRCW,26,Cognition; possible confounder,cognition
+ACGTOT,20,Possible covariate; assess in EDA,other
+AIMR10,20,Possible covariate; assess in EDA,other
+AMSTOT,20,Possible covariate; assess in EDA,other
+ANS3PQ,20,Possible covariate; assess in EDA,other
+ARMS,20,Possible covariate; assess in EDA,other
+ARMSA,20,Possible covariate; assess in EDA,other
+ARMSW,20,Possible covariate; assess in EDA,other
+ATR20,20,Possible covariate; assess in EDA,other
+CALC,20,Possible covariate; assess in EDA,other
+CALCA,20,Possible covariate; assess in EDA,other
+CALCW,20,Possible covariate; assess in EDA,other
+CLAIMED,20,Possible covariate; assess in EDA,other
+COMP,20,Possible covariate; assess in EDA,other
+COMPW,20,Possible covariate; assess in EDA,other
+CONDE,20,Possible covariate; assess in EDA,other
+CONDEF,20,Possible covariate; assess in EDA,other
+CONDS,20,Possible covariate; assess in EDA,other
+CONDSF,20,Possible covariate; assess in EDA,other
+CONDSP,20,Possible covariate; assess in EDA,other
+COVR,20,Possible covariate; assess in EDA,other
+COVRT,20,Possible covariate; assess in EDA,other
+COVS,20,Possible covariate; assess in EDA,other
+DADAGE,20,Possible covariate; assess in EDA,other
+DBDIAGYR,20,Possible covariate; assess in EDA,other
+DBINSULN,20,Possible covariate; assess in EDA,other
+DBORLMED,20,Possible covariate; assess in EDA,other
+DBSTAGE,20,Possible covariate; assess in EDA,other
+DCBENE1,20,Possible covariate; assess in EDA,other
+DCBENE2,20,Possible covariate; assess in EDA,other
+DCBENE3,20,Possible covariate; assess in EDA,other
+DCBENE4,20,Possible covariate; assess in EDA,other
+DCCONT1,20,Possible covariate; assess in EDA,other
+DCCONT2,20,Possible covariate; assess in EDA,other
+DCCONT3,20,Possible covariate; assess in EDA,other
+DCCONT4,20,Possible covariate; assess in EDA,other
+DCMODE1,20,Possible covariate; assess in EDA,other
+DCMODE2,20,Possible covariate; assess in EDA,other
+DCMODE3,20,Possible covariate; assess in EDA,other
+DCMODE4,20,Possible covariate; assess in EDA,other
+DCPCT1,20,Possible covariate; assess in EDA,other
+DCPCT2,20,Possible covariate; assess in EDA,other
+DCPCT3,20,Possible covariate; assess in EDA,other
+DCPCT4,20,Possible covariate; assess in EDA,other
+DENTST,20,Possible covariate; assess in EDA,other
+DIME,20,Possible covariate; assess in EDA,other
+DIMEA,20,Possible covariate; assess in EDA,other
+DIMEW,20,Possible covariate; assess in EDA,other
+DOCTIM,20,Possible covariate; assess in EDA,other
+DOCTOR,20,Possible covariate; assess in EDA,other
+DRINKD,20,Possible covariate; assess in EDA,other
+DRUGS,20,Possible covariate; assess in EDA,other
+DSTAT,20,Possible covariate; assess in EDA,other
+DW,20,Possible covariate; assess in EDA,other
+DWP,20,Possible covariate; assess in EDA,other
+DY,20,Possible covariate; assess in EDA,other
+DYP,20,Possible covariate; assess in EDA,other
+EARAID,20,Possible covariate; assess in EDA,other
+EARRT,20,Possible covariate; assess in EDA,other
+EFFORT,20,Possible covariate; assess in EDA,other
+EFFORX,20,Possible covariate; assess in EDA,other
+ENLIFE,20,Possible covariate; assess in EDA,other
+ENLIFX,20,Possible covariate; assess in EDA,other
+EYECAT,20,Possible covariate; assess in EDA,other
+EYEFR,20,Possible covariate; assess in EDA,other
+EYEGLC,20,Possible covariate; assess in EDA,other
+EYENR,20,Possible covariate; assess in EDA,other
+EYERT,20,Possible covariate; assess in EDA,other
+FAMR,20,Possible covariate; assess in EDA,other
+FBWC20,20,Possible covariate; assess in EDA,other
+FBWC20P,20,Possible covariate; assess in EDA,other
+FBWC20W,20,Possible covariate; assess in EDA,other
+FBWC86,20,Possible covariate; assess in EDA,other
+FDW,20,Possible covariate; assess in EDA,other
+FDWP,20,Possible covariate; assess in EDA,other
+FDY,20,Possible covariate; assess in EDA,other
+FDYP,20,Possible covariate; assess in EDA,other
+FIMRC,20,Possible covariate; assess in EDA,other
+FIMRCP,20,Possible covariate; assess in EDA,other
+FIMRCW,20,Possible covariate; assess in EDA,other
+FINEA,20,Possible covariate; assess in EDA,other
+FINPLN,20,Possible covariate; assess in EDA,other
+FINR,20,Possible covariate; assess in EDA,other
+FLAG,20,Possible covariate; assess in EDA,other
+FLONE,20,Possible covariate; assess in EDA,other
+FLONEX,20,Possible covariate; assess in EDA,other
+FLUSHT,20,Possible covariate; assess in EDA,other
+FMO,20,Possible covariate; assess in EDA,other
+FMOP,20,Possible covariate; assess in EDA,other
+FPRES,20,Possible covariate; assess in EDA,other
+FPRESP,20,Possible covariate; assess in EDA,other
+FPSTME,20,Possible covariate; assess in EDA,other
+FSAD,20,Possible covariate; assess in EDA,other
+FSADX,20,Possible covariate; assess in EDA,other
+FSCIS,20,Possible covariate; assess in EDA,other
+FSCISP,20,Possible covariate; assess in EDA,other
+FSER7,20,Possible covariate; assess in EDA,other
+FSER7P,20,Possible covariate; assess in EDA,other
+FSER7W,20,Possible covariate; assess in EDA,other
+FSIZE,20,Possible covariate; assess in EDA,other
+FSIZEF,20,Possible covariate; assess in EDA,other
+FSLFME,20,Possible covariate; assess in EDA,other
+FVOCAB,20,Possible covariate; assess in EDA,other
+FVOCABP,20,Possible covariate; assess in EDA,other
+FVP,20,Possible covariate; assess in EDA,other
+FVPP,20,Possible covariate; assess in EDA,other
+FYR,20,Possible covariate; assess in EDA,other
+FYRP,20,Possible covariate; assess in EDA,other
+GOING,20,Possible covariate; assess in EDA,other
+GOINGX,20,Possible covariate; assess in EDA,other
+GOVMD,20,Possible covariate; assess in EDA,other
+GOVMR,20,Possible covariate; assess in EDA,other
+GOVOT,20,Possible covariate; assess in EDA,other
+GOVVA,20,Possible covariate; assess in EDA,other
+GROSSA,20,Possible covariate; assess in EDA,other
+GRP,20,Possible covariate; assess in EDA,other
+GRPDOM,20,Possible covariate; assess in EDA,other
+GRPL,20,Possible covariate; assess in EDA,other
+GRPPOS,20,Possible covariate; assess in EDA,other
+GRPR,20,Possible covariate; assess in EDA,other
+HALUC,20,Possible covariate; assess in EDA,other
+HDLR20,20,Possible covariate; assess in EDA,other
+HEART,20,Possible covariate; assess in EDA,other
+HEARTF,20,Possible covariate; assess in EDA,other
+HEARTQ,20,Possible covariate; assess in EDA,other
+HEARTS,20,Possible covariate; assess in EDA,other
+HECOV1,20,Possible covariate; assess in EDA,other
+HECOV2,20,Possible covariate; assess in EDA,other
+HECOV3,20,Possible covariate; assess in EDA,other
+HEIGHT,20,Possible covariate; assess in EDA,other
+HENUM,20,Possible covariate; assess in EDA,other
+HERET,20,Possible covariate; assess in EDA,other
+HERTR1,20,Possible covariate; assess in EDA,other
+HERTR2,20,Possible covariate; assess in EDA,other
+HERTR3,20,Possible covariate; assess in EDA,other
+HERTS1,20,Possible covariate; assess in EDA,other
+HERTS2,20,Possible covariate; assess in EDA,other
+HERTS3,20,Possible covariate; assess in EDA,other
+HESRC1,20,Possible covariate; assess in EDA,other
+HESRC2,20,Possible covariate; assess in EDA,other
+HESRC3,20,Possible covariate; assess in EDA,other
+HIBP,20,Possible covariate; assess in EDA,other
+HIBPE2,20,Possible covariate; assess in EDA,other
+HIBPF,20,Possible covariate; assess in EDA,other
+HIBPQ,20,Possible covariate; assess in EDA,other
+HIBPS,20,Possible covariate; assess in EDA,other
+HIGOV,20,Possible covariate; assess in EDA,other
+HILTC,20,Possible covariate; assess in EDA,other
+HIMR20,20,Possible covariate; assess in EDA,other
+HIOTHP,20,Possible covariate; assess in EDA,other
+HLPDYSF,20,Possible covariate; assess in EDA,other
+HLPDYSNF,20,Possible covariate; assess in EDA,other
+HLPDYSP,20,Possible covariate; assess in EDA,other
+HLPDYST,20,Possible covariate; assess in EDA,other
+HLPDYSU,20,Possible covariate; assess in EDA,other
+HLPHRSF,20,Possible covariate; assess in EDA,other
+HLPHRSNF,20,Possible covariate; assess in EDA,other
+HLPHRSP,20,Possible covariate; assess in EDA,other
+HLPHRST,20,Possible covariate; assess in EDA,other
+HLPHRSU,20,Possible covariate; assess in EDA,other
+HLPPDFA,20,Possible covariate; assess in EDA,other
+HLPPDFN,20,Possible covariate; assess in EDA,other
+HLPPDNFA,20,Possible covariate; assess in EDA,other
+HLPPDNFN,20,Possible covariate; assess in EDA,other
+HLPPDTA,20,Possible covariate; assess in EDA,other
+HLPPDTN,20,Possible covariate; assess in EDA,other
+HLPRFN,20,Possible covariate; assess in EDA,other
+HLPRNFN,20,Possible covariate; assess in EDA,other
+HLPRPN,20,Possible covariate; assess in EDA,other
+HLPRTN,20,Possible covariate; assess in EDA,other
+HLPRUN,20,Possible covariate; assess in EDA,other
+HLTC3,20,Possible covariate; assess in EDA,other
+HLTC5,20,Possible covariate; assess in EDA,other
+HLTC5F,20,Possible covariate; assess in EDA,other
+HOMCAR,20,Possible covariate; assess in EDA,other
+HOSP,20,Possible covariate; assess in EDA,other
+HSPNIT,20,Possible covariate; assess in EDA,other
+HSPTIM,20,Possible covariate; assess in EDA,other
+HSWRKF,20,Possible covariate; assess in EDA,other
+HTR40,20,Possible covariate; assess in EDA,other
+IANN,20,Possible covariate; assess in EDA,other
+IEARN,20,Possible covariate; assess in EDA,other
+IFANN,20,Possible covariate; assess in EDA,other
+IFEARN,20,Possible covariate; assess in EDA,other
+IFGXFR,20,Possible covariate; assess in EDA,other
+IFIRAW,20,Possible covariate; assess in EDA,other
+IFIRAWY1,20,Possible covariate; assess in EDA,other
+IFPEN,20,Possible covariate; assess in EDA,other
+IFPENA,20,Possible covariate; assess in EDA,other
+IFSDI,20,Possible covariate; assess in EDA,other
+IFSRET,20,Possible covariate; assess in EDA,other
+IFSSDI,20,Possible covariate; assess in EDA,other
+IFSSI,20,Possible covariate; assess in EDA,other
+IFUNEM,20,Possible covariate; assess in EDA,other
+IFUNWC,20,Possible covariate; assess in EDA,other
+IFWCMP,20,Possible covariate; assess in EDA,other
+IGXFR,20,Possible covariate; assess in EDA,other
+IIRAW,20,Possible covariate; assess in EDA,other
+IIRAWY1,20,Possible covariate; assess in EDA,other
+IMRC,20,Possible covariate; assess in EDA,other
+IMRC20,20,Possible covariate; assess in EDA,other
+IMRCP,20,Possible covariate; assess in EDA,other
+IMRCW,20,Possible covariate; assess in EDA,other
+INHER,20,Possible covariate; assess in EDA,other
+INHPE,20,Possible covariate; assess in EDA,other
+INHPFN,20,Possible covariate; assess in EDA,other
+INHPNFN,20,Possible covariate; assess in EDA,other
+INHPPN,20,Possible covariate; assess in EDA,other
+INHPTN,20,Possible covariate; assess in EDA,other
+INHPUN,20,Possible covariate; assess in EDA,other
+INLBRF,20,Possible covariate; assess in EDA,other
+IPEN,20,Possible covariate; assess in EDA,other
+IPENA,20,Possible covariate; assess in EDA,other
+ISDI,20,Possible covariate; assess in EDA,other
+ISRET,20,Possible covariate; assess in EDA,other
+ISSDI,20,Possible covariate; assess in EDA,other
+ISSI,20,Possible covariate; assess in EDA,other
+IUNEM,20,Possible covariate; assess in EDA,other
+IUNWC,20,Possible covariate; assess in EDA,other
+IWBEG,20,Possible covariate; assess in EDA,other
+IWBEGF,20,Possible covariate; assess in EDA,other
+IWCMP,20,Possible covariate; assess in EDA,other
+IWEND,20,Possible covariate; assess in EDA,other
+IWENDF,20,Possible covariate; assess in EDA,other
+IWENDM,20,Possible covariate; assess in EDA,other
+IWENDY,20,Possible covariate; assess in EDA,other
+IWMID,20,Possible covariate; assess in EDA,other
+IWMIDF,20,Possible covariate; assess in EDA,other
+IWSTAT,20,Possible covariate; assess in EDA,other
+JCIND,20,Possible covariate; assess in EDA,other
+JCINDB,20,Possible covariate; assess in EDA,other
+JCINDC,20,Possible covariate; assess in EDA,other
+JCOCC,20,Possible covariate; assess in EDA,other
+JCOCCA,20,Possible covariate; assess in EDA,other
+JCOCCB,20,Possible covariate; assess in EDA,other
+JCOCCC,20,Possible covariate; assess in EDA,other
+JCPEN,20,Possible covariate; assess in EDA,other
+JCPENF,20,Possible covariate; assess in EDA,other
+JCTEN,20,Possible covariate; assess in EDA,other
+JHOUR2,20,Possible covariate; assess in EDA,other
+JHOURS,20,Possible covariate; assess in EDA,other
+JJOBS,20,Possible covariate; assess in EDA,other
+JLASTM,20,Possible covariate; assess in EDA,other
+JLASTY,20,Possible covariate; assess in EDA,other
+JLIFT,20,Possible covariate; assess in EDA,other
+JLIND,20,Possible covariate; assess in EDA,other
+JLINDB,20,Possible covariate; assess in EDA,other
+JLINDC,20,Possible covariate; assess in EDA,other
+JLMIS,20,Possible covariate; assess in EDA,other
+JLOCC,20,Possible covariate; assess in EDA,other
+JLOCCA,20,Possible covariate; assess in EDA,other
+JLOCCB,20,Possible covariate; assess in EDA,other
+JLOCCC,20,Possible covariate; assess in EDA,other
+JLTEN,20,Possible covariate; assess in EDA,other
+JLTENF,20,Possible covariate; assess in EDA,other
+JMISS,20,Possible covariate; assess in EDA,other
+JNJOB,20,Possible covariate; assess in EDA,other
+JNJOB5,20,Possible covariate; assess in EDA,other
+JOG,20,Possible covariate; assess in EDA,other
+JOGA,20,Possible covariate; assess in EDA,other
+JOGW,20,Possible covariate; assess in EDA,other
+JPHYS,20,Possible covariate; assess in EDA,other
+JSIGHT,20,Possible covariate; assess in EDA,other
+JSTOOP,20,Possible covariate; assess in EDA,other
+JSTRES,20,Possible covariate; assess in EDA,other
+JWEEK2,20,Possible covariate; assess in EDA,other
+JWEEKS,20,Possible covariate; assess in EDA,other
+JYEARM,20,Possible covariate; assess in EDA,other
+JYEARS,20,Possible covariate; assess in EDA,other
+LBAGR,20,Possible covariate; assess in EDA,other
+LBASSISTPRB,20,Possible covariate; assess in EDA,other
+LBCOMP,20,Possible covariate; assess in EDA,other
+LBCON10,20,Possible covariate; assess in EDA,other
+LBCON5,20,Possible covariate; assess in EDA,other
+LBELIG,20,Possible covariate; assess in EDA,other
+LBEXT,20,Possible covariate; assess in EDA,other
+LBFAMDRUGPRB,20,Possible covariate; assess in EDA,other
+LBFINPRB,20,Possible covariate; assess in EDA,other
+LBHOUSEPRB,20,Possible covariate; assess in EDA,other
+LBLONELY11,20,Possible covariate; assess in EDA,other
+LBLONELY3,20,Possible covariate; assess in EDA,other
+LBNEGAFFECT,20,Possible covariate; assess in EDA,other
+LBNEGAFFECT6,20,Possible covariate; assess in EDA,other
+LBNEUR,20,Possible covariate; assess in EDA,other
+LBONCHRSTR,20,Possible covariate; assess in EDA,other
+LBOPEN,20,Possible covariate; assess in EDA,other
+LBPOSAFFECT,20,Possible covariate; assess in EDA,other
+LBPOSAFFECT6,20,Possible covariate; assess in EDA,other
+LBRF,20,Possible covariate; assess in EDA,other
+LBRFH,20,Possible covariate; assess in EDA,other
+LBRFY,20,Possible covariate; assess in EDA,other
+LBRLTNSHPRB,20,Possible covariate; assess in EDA,other
+LBSATCITY,20,Possible covariate; assess in EDA,other
+LBSATFAM,20,Possible covariate; assess in EDA,other
+LBSATFIN,20,Possible covariate; assess in EDA,other
+LBSATHOME,20,Possible covariate; assess in EDA,other
+LBSATINC,20,Possible covariate; assess in EDA,other
+LBSATLEISURE,20,Possible covariate; assess in EDA,other
+LBSATLIFE,20,Possible covariate; assess in EDA,other
+LBSATWLF,20,Possible covariate; assess in EDA,other
+LBWGTR,20,Possible covariate; assess in EDA,other
+LBWORKPRB,20,Possible covariate; assess in EDA,other
+LGMUSA,20,Possible covariate; assess in EDA,other
+LGMUSW,20,Possible covariate; assess in EDA,other
+LHTACT,20,Possible covariate; assess in EDA,other
+LIFEIN,20,Possible covariate; assess in EDA,other
+LIFT,20,Possible covariate; assess in EDA,other
+LIFTA,20,Possible covariate; assess in EDA,other
+LIFTW,20,Possible covariate; assess in EDA,other
+LIV10,20,Possible covariate; assess in EDA,other
+LIV10A,20,Possible covariate; assess in EDA,other
+LIV10P,20,Possible covariate; assess in EDA,other
+LIV10R,20,Possible covariate; assess in EDA,other
+LIV75,20,Possible covariate; assess in EDA,other
+LIV75C,20,Possible covariate; assess in EDA,other
+LIV75F,20,Possible covariate; assess in EDA,other
+LIV75P,20,Possible covariate; assess in EDA,other
+LIV75R,20,Possible covariate; assess in EDA,other
+LIV85,20,Possible covariate; assess in EDA,other
+LIV85C,20,Possible covariate; assess in EDA,other
+LIV85F,20,Possible covariate; assess in EDA,other
+LIV85P,20,Possible covariate; assess in EDA,other
+LIV85R,20,Possible covariate; assess in EDA,other
+LIV8XC,20,Possible covariate; assess in EDA,other
+LIV8XF,20,Possible covariate; assess in EDA,other
+LIVBRO,20,Possible covariate; assess in EDA,other
+LIVPAR,20,Possible covariate; assess in EDA,other
+LIVSIB,20,Possible covariate; assess in EDA,other
+LIVSIS,20,Possible covariate; assess in EDA,other
+LOST,20,Possible covariate; assess in EDA,other
+LTACTF,20,Possible covariate; assess in EDA,other
+LTACTN,20,Possible covariate; assess in EDA,other
+LTACTP,20,Possible covariate; assess in EDA,other
+LTACTX,20,Possible covariate; assess in EDA,other
+LTCPRM,20,Possible covariate; assess in EDA,other
+LUNG,20,Possible covariate; assess in EDA,other
+LUNGF,20,Possible covariate; assess in EDA,other
+LUNGQ,20,Possible covariate; assess in EDA,other
+LUNGS,20,Possible covariate; assess in EDA,other
+MAMMOG,20,Possible covariate; assess in EDA,other
+MAP,20,Possible covariate; assess in EDA,other
+MAPA,20,Possible covariate; assess in EDA,other
+MAPW,20,Possible covariate; assess in EDA,other
+MCURLN,20,Possible covariate; assess in EDA,other
+MCWV,20,Possible covariate; assess in EDA,other
+MCWVW,20,Possible covariate; assess in EDA,other
+MDACTX,20,Possible covariate; assess in EDA,other
+MDIV,20,Possible covariate; assess in EDA,other
+MEALS,20,Possible covariate; assess in EDA,other
+MEALSA,20,Possible covariate; assess in EDA,other
+MEALSH,20,Possible covariate; assess in EDA,other
+MEALSR,20,Possible covariate; assess in EDA,other
+MEDS,20,Possible covariate; assess in EDA,other
+MEDSA,20,Possible covariate; assess in EDA,other
+MEDSH,20,Possible covariate; assess in EDA,other
+MEDSR,20,Possible covariate; assess in EDA,other
+MEMRY,20,Possible covariate; assess in EDA,other
+MEMRYE,20,Possible covariate; assess in EDA,other
+MEMRYE2,20,Possible covariate; assess in EDA,other
+MEMRYF,20,Possible covariate; assess in EDA,other
+MEMRYQ,20,Possible covariate; assess in EDA,other
+MEMRYS,20,Possible covariate; assess in EDA,other
+MEND,20,Possible covariate; assess in EDA,other
+MLEN,20,Possible covariate; assess in EDA,other
+MLENM,20,Possible covariate; assess in EDA,other
+MNEV,20,Possible covariate; assess in EDA,other
+MO,20,Possible covariate; assess in EDA,other
+MOMAGE,20,Possible covariate; assess in EDA,other
+MOMLIV,20,Possible covariate; assess in EDA,other
+MONEY,20,Possible covariate; assess in EDA,other
+MONEYA,20,Possible covariate; assess in EDA,other
+MONEYH,20,Possible covariate; assess in EDA,other
+MONEYR,20,Possible covariate; assess in EDA,other
+MOP,20,Possible covariate; assess in EDA,other
+MPART,20,Possible covariate; assess in EDA,other
+MRCT,20,Possible covariate; assess in EDA,other
+MRPREM,20,Possible covariate; assess in EDA,other
+MSTOT,20,Possible covariate; assess in EDA,other
+MSTOTP,20,Possible covariate; assess in EDA,other
+MWID,20,Possible covariate; assess in EDA,other
+NHMDAY,20,Possible covariate; assess in EDA,other
+NHMLIV,20,Possible covariate; assess in EDA,other
+NHMMVM,20,Possible covariate; assess in EDA,other
+NHMMVY,20,Possible covariate; assess in EDA,other
+NOTICS,20,Possible covariate; assess in EDA,other
+NOVOC,20,Possible covariate; assess in EDA,other
+NRSHOM,20,Possible covariate; assess in EDA,other
+NRSNIT,20,Possible covariate; assess in EDA,other
+NRSTIM,20,Possible covariate; assess in EDA,other
+NSSCRE,20,Possible covariate; assess in EDA,other
+NSSCSE,20,Possible covariate; assess in EDA,other
+OOPMD,20,Possible covariate; assess in EDA,other
+OOPMDF,20,Possible covariate; assess in EDA,other
+OOPMDO,20,Possible covariate; assess in EDA,other
+OOPMDOF,20,Possible covariate; assess in EDA,other
+OUTPT,20,Possible covariate; assess in EDA,other
+PAPSM,20,Possible covariate; assess in EDA,other
+PARTD,20,Possible covariate; assess in EDA,other
+PENCT,20,Possible covariate; assess in EDA,other
+PENIC1,20,Possible covariate; assess in EDA,other
+PENIC2,20,Possible covariate; assess in EDA,other
+PENINC,20,Possible covariate; assess in EDA,other
+PENI_N,20,Possible covariate; assess in EDA,other
+PEXIT,20,Possible covariate; assess in EDA,other
+PHONE,20,Possible covariate; assess in EDA,other
+PHONEA,20,Possible covariate; assess in EDA,other
+PHONEH,20,Possible covariate; assess in EDA,other
+PHONER,20,Possible covariate; assess in EDA,other
+PMBMI,20,Possible covariate; assess in EDA,other
+PMHGHT,20,Possible covariate; assess in EDA,other
+PMHGHTS,20,Possible covariate; assess in EDA,other
+PMWAIST,20,Possible covariate; assess in EDA,other
+PMWAISTC,20,Possible covariate; assess in EDA,other
+PMWGHT,20,Possible covariate; assess in EDA,other
+PMWGHTF,20,Possible covariate; assess in EDA,other
+PMWGHTS,20,Possible covariate; assess in EDA,other
+PNHM5Y,20,Possible covariate; assess in EDA,other
+PRCHMEM,20,Possible covariate; assess in EDA,other
+PRES,20,Possible covariate; assess in EDA,other
+PRESP,20,Possible covariate; assess in EDA,other
+PRMEM,20,Possible covariate; assess in EDA,other
+PROST,20,Possible covariate; assess in EDA,other
+PROXY,20,Possible covariate; assess in EDA,other
+PRPCNT,20,Possible covariate; assess in EDA,other
+PRPRM1,20,Possible covariate; assess in EDA,other
+PRPRM2,20,Possible covariate; assess in EDA,other
+PRPRM3,20,Possible covariate; assess in EDA,other
+PRSRC1,20,Possible covariate; assess in EDA,other
+PRSRC2,20,Possible covariate; assess in EDA,other
+PRSRC3,20,Possible covariate; assess in EDA,other
+PSTMEM,20,Possible covariate; assess in EDA,other
+PSYCH,20,Possible covariate; assess in EDA,other
+PSYCHF,20,Possible covariate; assess in EDA,other
+PSYCHQ,20,Possible covariate; assess in EDA,other
+PSYCHS,20,Possible covariate; assess in EDA,other
+PTYP1,20,Possible covariate; assess in EDA,other
+PTYP2,20,Possible covariate; assess in EDA,other
+PTYP3,20,Possible covariate; assess in EDA,other
+PTYP4,20,Possible covariate; assess in EDA,other
+PTYPD1,20,Possible covariate; assess in EDA,other
+PTYPD2,20,Possible covariate; assess in EDA,other
+PTYPD3,20,Possible covariate; assess in EDA,other
+PTYPD4,20,Possible covariate; assess in EDA,other
+PTYPF1,20,Possible covariate; assess in EDA,other
+PTYPF2,20,Possible covariate; assess in EDA,other
+PTYPF3,20,Possible covariate; assess in EDA,other
+PTYPF4,20,Possible covariate; assess in EDA,other
+PUFF,20,Possible covariate; assess in EDA,other
+PUFFPOS,20,Possible covariate; assess in EDA,other
+PUSH,20,Possible covariate; assess in EDA,other
+PUSHA,20,Possible covariate; assess in EDA,other
+PUSHW,20,Possible covariate; assess in EDA,other
+RETDTWV,20,Possible covariate; assess in EDA,other
+RETEMP,20,Possible covariate; assess in EDA,other
+RETINC,20,Possible covariate; assess in EDA,other
+RETLIV,20,Possible covariate; assess in EDA,other
+RETMON,20,Possible covariate; assess in EDA,other
+RETSAT,20,Possible covariate; assess in EDA,other
+RETWLT,20,Possible covariate; assess in EDA,other
+RETWRK,20,Possible covariate; assess in EDA,other
+RETWSP,20,Possible covariate; assess in EDA,other
+RETYR,20,Possible covariate; assess in EDA,other
+RISK,20,Possible covariate; assess in EDA,other
+RISK6,20,Possible covariate; assess in EDA,other
+RPLNYA,20,Possible covariate; assess in EDA,other
+RPLNYR,20,Possible covariate; assess in EDA,other
+RXPREM,20,Possible covariate; assess in EDA,other
+RYRCMP,20,Possible covariate; assess in EDA,other
+SAMEJOB,20,Possible covariate; assess in EDA,other
+SAMEMP,20,Possible covariate; assess in EDA,other
+SAYRET,20,Possible covariate; assess in EDA,other
+SCIS,20,Possible covariate; assess in EDA,other
+SCISP,20,Possible covariate; assess in EDA,other
+SDAPNEA,20,Possible covariate; assess in EDA,other
+SDIAPL,20,Possible covariate; assess in EDA,other
+SDIAPLM,20,Possible covariate; assess in EDA,other
+SDIAPLY,20,Possible covariate; assess in EDA,other
+SDIAPP,20,Possible covariate; assess in EDA,other
+SDIAPPM,20,Possible covariate; assess in EDA,other
+SDIAPPY,20,Possible covariate; assess in EDA,other
+SDIDEN,20,Possible covariate; assess in EDA,other
+SDINSOM,20,Possible covariate; assess in EDA,other
+SDIREC,20,Possible covariate; assess in EDA,other
+SDIRECM,20,Possible covariate; assess in EDA,other
+SDIRECY,20,Possible covariate; assess in EDA,other
+SDISTP,20,Possible covariate; assess in EDA,other
+SDISTPM,20,Possible covariate; assess in EDA,other
+SDISTPY,20,Possible covariate; assess in EDA,other
+SDNRCLPS,20,Possible covariate; assess in EDA,other
+SDOTH,20,Possible covariate; assess in EDA,other
+SDRSTLG,20,Possible covariate; assess in EDA,other
+SER7,20,Possible covariate; assess in EDA,other
+SER7P,20,Possible covariate; assess in EDA,other
+SER7W,20,Possible covariate; assess in EDA,other
+SHOP,20,Possible covariate; assess in EDA,other
+SHOPA,20,Possible covariate; assess in EDA,other
+SHOPH,20,Possible covariate; assess in EDA,other
+SHOPR,20,Possible covariate; assess in EDA,other
+SIT,20,Possible covariate; assess in EDA,other
+SITA,20,Possible covariate; assess in EDA,other
+SITW,20,Possible covariate; assess in EDA,other
+SLEEP,20,Possible covariate; assess in EDA,other
+SLEEPBR,20,Possible covariate; assess in EDA,other
+SLEEPE,20,Possible covariate; assess in EDA,other
+SLEEPFAL,20,Possible covariate; assess in EDA,other
+SLEEPQ,20,Possible covariate; assess in EDA,other
+SLEEPR,20,Possible covariate; assess in EDA,other
+SLEEPRT,20,Possible covariate; assess in EDA,other
+SLEEPS,20,Possible covariate; assess in EDA,other
+SLEEPSN,20,Possible covariate; assess in EDA,other
+SLEEPT,20,Possible covariate; assess in EDA,other
+SLEEPWKE,20,Possible covariate; assess in EDA,other
+SLEEPWKN,20,Possible covariate; assess in EDA,other
+SLEEPX,20,Possible covariate; assess in EDA,other
+SLFEMP,20,Possible covariate; assess in EDA,other
+SLFMEM,20,Possible covariate; assess in EDA,other
+SPCFAC,20,Possible covariate; assess in EDA,other
+SSAPL,20,Possible covariate; assess in EDA,other
+SSAPLM,20,Possible covariate; assess in EDA,other
+SSAPLY,20,Possible covariate; assess in EDA,other
+SSAPP,20,Possible covariate; assess in EDA,other
+SSAPPM,20,Possible covariate; assess in EDA,other
+SSAPPY,20,Possible covariate; assess in EDA,other
+SSDEN,20,Possible covariate; assess in EDA,other
+SSDI,20,Possible covariate; assess in EDA,other
+SSIAPL,20,Possible covariate; assess in EDA,other
+SSIAPLM,20,Possible covariate; assess in EDA,other
+SSIAPLY,20,Possible covariate; assess in EDA,other
+SSIAPP,20,Possible covariate; assess in EDA,other
+SSIAPPM,20,Possible covariate; assess in EDA,other
+SSIAPPY,20,Possible covariate; assess in EDA,other
+SSIDEN,20,Possible covariate; assess in EDA,other
+SSIREC,20,Possible covariate; assess in EDA,other
+SSIRECM,20,Possible covariate; assess in EDA,other
+SSIRECY,20,Possible covariate; assess in EDA,other
+SSISTP,20,Possible covariate; assess in EDA,other
+SSISTPM,20,Possible covariate; assess in EDA,other
+SSISTPY,20,Possible covariate; assess in EDA,other
+SSREC,20,Possible covariate; assess in EDA,other
+SSRECM,20,Possible covariate; assess in EDA,other
+SSRECY,20,Possible covariate; assess in EDA,other
+SSSTP,20,Possible covariate; assess in EDA,other
+SSSTPM,20,Possible covariate; assess in EDA,other
+SSSTPY,20,Possible covariate; assess in EDA,other
+SSWRER,20,Possible covariate; assess in EDA,other
+SSWRNR,20,Possible covariate; assess in EDA,other
+SSWRXA,20,Possible covariate; assess in EDA,other
+SSWSER,20,Possible covariate; assess in EDA,other
+SSWSNR,20,Possible covariate; assess in EDA,other
+SSWSXA,20,Possible covariate; assess in EDA,other
+STATUS,20,Possible covariate; assess in EDA,other
+STOOP,20,Possible covariate; assess in EDA,other
+STOOPA,20,Possible covariate; assess in EDA,other
+STOOPW,20,Possible covariate; assess in EDA,other
+STROK,20,Possible covariate; assess in EDA,other
+STROKF,20,Possible covariate; assess in EDA,other
+STROKQ,20,Possible covariate; assess in EDA,other
+STROKS,20,Possible covariate; assess in EDA,other
+STXJAW,20,Possible covariate; assess in EDA,other
+STXMED,20,Possible covariate; assess in EDA,other
+STXNERVE,20,Possible covariate; assess in EDA,other
+STXOTH,20,Possible covariate; assess in EDA,other
+STXOXY,20,Possible covariate; assess in EDA,other
+STXPRE,20,Possible covariate; assess in EDA,other
+STXSRG,20,Possible covariate; assess in EDA,other
+STXSTRIP,20,Possible covariate; assess in EDA,other
+TIMWLK,20,Possible covariate; assess in EDA,other
+TIMWLKA,20,Possible covariate; assess in EDA,other
+TLIPRM,20,Possible covariate; assess in EDA,other
+TOTMBF,20,Possible covariate; assess in EDA,other
+TOTMBI,20,Possible covariate; assess in EDA,other
+TOTMD,20,Possible covariate; assess in EDA,other
+TOTMDF,20,Possible covariate; assess in EDA,other
+TR20,20,Possible covariate; assess in EDA,other
+TR20P,20,Possible covariate; assess in EDA,other
+TR20W,20,Possible covariate; assess in EDA,other
+TR40,20,Possible covariate; assess in EDA,other
+TYLTC,20,Possible covariate; assess in EDA,other
+ULCER,20,Possible covariate; assess in EDA,other
+UNEMP,20,Possible covariate; assess in EDA,other
+UNION,20,Possible covariate; assess in EDA,other
+UNIONF,20,Possible covariate; assess in EDA,other
+URBRUR,20,Possible covariate; assess in EDA,other
+VGACTF,20,Possible covariate; assess in EDA,other
+VGACTN,20,Possible covariate; assess in EDA,other
+VGACTP,20,Possible covariate; assess in EDA,other
+VGACTX,20,Possible covariate; assess in EDA,other
+VOCAB,20,Possible covariate; assess in EDA,other
+VOCABP,20,Possible covariate; assess in EDA,other
+VP,20,Possible covariate; assess in EDA,other
+VPP,20,Possible covariate; assess in EDA,other
+WANDER,20,Possible covariate; assess in EDA,other
+WEIGHT,20,Possible covariate; assess in EDA,other
+WGFHR,20,Possible covariate; assess in EDA,other
+WGFWK,20,Possible covariate; assess in EDA,other
+WGIHR,20,Possible covariate; assess in EDA,other
+WGIWK,20,Possible covariate; assess in EDA,other
+WHAPPX,20,Possible covariate; assess in EDA,other
+WHAPPY,20,Possible covariate; assess in EDA,other
+WORK,20,Possible covariate; assess in EDA,other
+WORK2,20,Possible covariate; assess in EDA,other
+WORK62,20,Possible covariate; assess in EDA,other
+WORK62F,20,Possible covariate; assess in EDA,other
+WORK65,20,Possible covariate; assess in EDA,other
+WORK65F,20,Possible covariate; assess in EDA,other
+WORK70,20,Possible covariate; assess in EDA,other
+WORK70A,20,Possible covariate; assess in EDA,other
+WORK70AF,20,Possible covariate; assess in EDA,other
+WORK70F,20,Possible covariate; assess in EDA,other
+WORKLM,20,Possible covariate; assess in EDA,other
+WTCRNH,20,Possible covariate; assess in EDA,other
+WTRESP,20,Possible covariate; assess in EDA,other
+WTR_NH,20,Possible covariate; assess in EDA,other
+YR,20,Possible covariate; assess in EDA,other
+YRP,20,Possible covariate; assess in EDA,other
+ALZHE,18,Other condition; comorbidity/confounder,other_condition
+ALZHEE,18,Other condition; comorbidity/confounder,other_condition
+ALZHEE2,18,Other condition; comorbidity/confounder,other_condition
+ALZHEF,18,Other condition; comorbidity/confounder,other_condition
+ALZHEQ,18,Other condition; comorbidity/confounder,other_condition
+ALZHES,18,Other condition; comorbidity/confounder,other_condition
+ARTHR,18,Other condition; comorbidity/confounder,other_condition
+ARTHRE,18,Other condition; comorbidity/confounder,other_condition
+ARTHRE2,18,Other condition; comorbidity/confounder,other_condition
+ARTHRF,18,Other condition; comorbidity/confounder,other_condition
+ARTHRQ,18,Other condition; comorbidity/confounder,other_condition
+ARTHRS,18,Other condition; comorbidity/confounder,other_condition
+BREAST,18,Other condition; comorbidity/confounder,other_condition
+CANCR,18,Other condition; comorbidity/confounder,other_condition
+CANCRE,18,Other condition; comorbidity/confounder,other_condition
+CANCRE2,18,Other condition; comorbidity/confounder,other_condition
+CANCRF,18,Other condition; comorbidity/confounder,other_condition
+CANCRQ,18,Other condition; comorbidity/confounder,other_condition
+CANCRS,18,Other condition; comorbidity/confounder,other_condition
+DEMEN,18,Other condition; comorbidity/confounder,other_condition
+DEMENE,18,Other condition; comorbidity/confounder,other_condition
+DEMENE2,18,Other condition; comorbidity/confounder,other_condition
+DEMENF,18,Other condition; comorbidity/confounder,other_condition
+DEMENQ,18,Other condition; comorbidity/confounder,other_condition
+DEMENS,18,Other condition; comorbidity/confounder,other_condition
+HEARTE,18,Other condition; comorbidity/confounder,other_condition
+HEARTE2,18,Other condition; comorbidity/confounder,other_condition
+LUNGE,18,Other condition; comorbidity/confounder,other_condition
+LUNGE2,18,Other condition; comorbidity/confounder,other_condition
+PSYCHE,18,Other condition; comorbidity/confounder,other_condition
+PSYCHE2,18,Other condition; comorbidity/confounder,other_condition
+STROKE,18,Other condition; comorbidity/confounder,other_condition
+STROKE2,18,Other condition; comorbidity/confounder,other_condition
+DIAB,0,Leakage: diabetes; do not use,leakage
+DIABE,0,Leakage: current diabetes; do not use as feature,leakage
+DIABE2,0,Leakage: diabetes; do not use,leakage
+DIABF,0,Leakage: diabetes; do not use,leakage
+DIABQ,0,Leakage: diabetes; do not use,leakage
+DIABS,0,Leakage: diabetes; do not use,leakage

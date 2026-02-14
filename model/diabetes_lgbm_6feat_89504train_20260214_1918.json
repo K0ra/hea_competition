@@ -1,0 +1,21 @@
+{
+  "target": "target_DIABE",
+  "target_suffix": "DIABE",
+  "feature_columns": [
+    "wave",
+    "BMI",
+    "AGEY_B",
+    "HIBPE",
+    "BPSYS",
+    "SHLT"
+  ],
+  "model_type": "lgbm",
+  "model_params": {},
+  "results": {
+    "F2_score": 0.3514,
+    "PR_AUC": 0.1363,
+    "ROC_AUC": 0.6757,
+    "best_F2_threshold": 0.512
+  },
+  "duration_sec": 2.0
+}

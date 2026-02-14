@@ -1,0 +1,12 @@
+# Diabetes-only run. Uses top_k features from feature_priority.csv.
+# If group_priority is set, features are picked round-robin by group (diversity).
+target_suffix: DIABE
+feature_priority: diseases/diabetes/feature_priority.csv
+group_priority: diseases/diabetes/group_priority.csv
+top_k: 8
+# sample_rows: 50000   # set to null or omit to use all rows (needed for enough complete cases in train waves)
+sample_rows: null
+mlflow_experiment: hea_diabetes
+model:
+  type: lr
+  params: {}

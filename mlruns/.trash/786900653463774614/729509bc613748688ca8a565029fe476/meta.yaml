@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/mlruns/786900653463774614/729509bc613748688ca8a565029fe476/artifacts
+deleted_time: 1771084689645
+end_time: 1771080538707
+entry_point_name: ''
+experiment_id: '786900653463774614'
+lifecycle_stage: deleted
+run_id: 729509bc613748688ca8a565029fe476
+run_name: phase3_100k
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771080366839
+status: 4
+tags: []
+user_id: cirogam

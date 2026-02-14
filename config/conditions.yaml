@@ -1,0 +1,20 @@
+# RAND HRS "doctor ever told you" condition indicators (feed into CONDE).
+# Same incident-by-t+2 logic for each: at-risk = condition=0 at wave t;
+# event = condition=1 at t+1 or t+2. Variable suffix in long data (after stripping wave prefix).
+conditions:
+  - suffix: DIABE
+    name: Diabetes
+  - suffix: HIBPE
+    name: High blood pressure
+  - suffix: CANCR
+    name: Cancer
+  - suffix: LUNGE
+    name: Lung disease
+  - suffix: HEARTE
+    name: Heart disease
+  - suffix: STROKE
+    name: Stroke
+  - suffix: PSYCHE
+    name: Psychiatric
+  - suffix: ARTHRE
+    name: Arthritis

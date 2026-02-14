@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/mlruns/892600318012192146/e6df39fe402e447e9231edb0891e2941/artifacts
+deleted_time: 1771092915865
+end_time: 1771092248891
+entry_point_name: ''
+experiment_id: '892600318012192146'
+lifecycle_stage: deleted
+run_id: e6df39fe402e447e9231edb0891e2941
+run_name: diabetes_lgbm
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771092248759
+status: 3
+tags: []
+user_id: cirogam

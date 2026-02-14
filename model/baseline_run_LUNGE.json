@@ -1,0 +1,65 @@
+{
+  "run_id": "baseline_001_LUNGE",
+  "description": "Logistic regression, temporal split, minimal features (Lung disease)",
+  "created": "2026-02-14",
+  "task": {
+    "target": "incident_lunge_by_t2",
+    "target_definition": "target_definition.md",
+    "evaluation_metrics": [
+      "F2",
+      "PR-AUC",
+      "ROC-AUC"
+    ]
+  },
+  "data": {
+    "source": "data/X_minimal.parquet, data/y_conditions.parquet",
+    "feature_manifest": "data/feature_manifest.csv",
+    "n_samples_total": 45954,
+    "train": {
+      "wave_range": [
+        3,
+        9
+      ],
+      "n_samples": 35845
+    },
+    "validation": {
+      "wave_range": [
+        10,
+        12
+      ],
+      "n_samples": 10109
+    },
+    "split_type": "temporal",
+    "features": [
+      "wave",
+      "AGEY_B",
+      "BMI",
+      "MSTAT",
+      "CESD",
+      "HIBPE",
+      "SHLT",
+      "MOBILA"
+    ],
+    "preprocessing": {
+      "missing": "complete cases only (no imputation); per-condition mask for target",
+      "scaling": "StandardScaler (fit on train, transform train and val)"
+    }
+  },
+  "model": {
+    "type": "sklearn.linear_model.LogisticRegression",
+    "hyperparameters": {
+      "class_weight": "balanced",
+      "max_iter": 1000,
+      "random_state": 42
+    }
+  },
+  "results": {
+    "validation": {
+      "F2_score": 0.2313,
+      "PR_AUC": 0.0875,
+      "ROC_AUC": 0.67,
+      "best_F2_threshold": 0.617,
+      "F2_at_best_threshold": 0.2579
+    }
+  }
+}

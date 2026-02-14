@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/mlruns/786900653463774614/91897ec2e035485ca4f33cb07fbc4e21/artifacts
+deleted_time: 1771085147174
+end_time: 1771084624744
+entry_point_name: ''
+experiment_id: '786900653463774614'
+lifecycle_stage: deleted
+run_id: 91897ec2e035485ca4f33cb07fbc4e21
+run_name: sample_feat_set_A_lr
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771084536737
+status: 3
+tags: []
+user_id: cirogam

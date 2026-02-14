@@ -1,0 +1,17 @@
+# Sample batch: baseline feature set, LR. Use with --skip-data after phase2_50k.
+# Run: python scripts/run_experiment.py --config config/experiments/sample_feat_baseline_lr.yaml --skip-data
+name: sample_feat_baseline_lr
+feature_set_id: feat_baseline
+sample_rows: 50000
+feature_columns:
+  - wave
+  - AGEY_B
+  - BMI
+  - MSTAT
+  - CESD
+  - HIBPE
+  - SHLT
+  - MOBILA
+model:
+  type: lr
+  params: {}
