@@ -25,6 +25,7 @@ from sklearn.metrics import (
     roc_auc_score,
     classification_report,
 )
+from imblearn.over_sampling import ADASYN
 from xgboost import XGBClassifier
 
 warnings.filterwarnings("ignore")
@@ -74,7 +75,13 @@ print("Step 1: Loading parquet")
 print("=" * 60)
 
 df = pd.read_parquet(PARQUET_PATH)
+
+# Downcast to save memory
+float_cols = df.select_dtypes(include=["float64"]).columns
+df[float_cols] = df[float_cols].astype("float32")
+
 print(f"Loaded: {df.shape[0]} rows x {df.shape[1]} columns")
+print(f"Memory: {df.memory_usage(deep=True).sum() / 1e6:.0f} MB")
 
 # ---------------------------------------------------------------------------
 # Step 2: Remove leaky columns
@@ -95,7 +102,8 @@ print("Step 3: Engineering lag/delta features")
 print("=" * 60)
 
 # Sort by person and wave for correct lag computation
-df = df.sort_values(["id", "wave"]).reset_index(drop=True)
+df.sort_values(["id", "wave"], inplace=True)
+df.reset_index(drop=True, inplace=True)
 
 lag_cols_available = [c for c in LAG_FEATURES if c in df.columns]
 print(f"Computing lags for {len(lag_cols_available)} features...")
@@ -163,7 +171,7 @@ print(f"Created {new_cols_count} new features")
 print(f"Total columns now: {df.shape[1]}")
 
 # ---------------------------------------------------------------------------
-# Step 4: Drop high-missingness columns
+# Step 4: 
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 60)
 print(f"Step 4: Dropping columns with >{MAX_MISSING_PCT*100:.0f}% missing")
@@ -181,10 +189,39 @@ if high_missing:
 df = df.drop(columns=high_missing)
 
 # ---------------------------------------------------------------------------
-# Step 5: Prepare features and target
+# Step 5: Impute missing values per person (temporal ffill/bfill + median)
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 60)
-print("Step 5: Preparing features and target")
+print("Step 5: Imputing NaN (per-person ffill/bfill -> person median -> global median)")
+print("=" * 60)
+
+exclude_from_impute = set(TARGET_COLS + ID_COLS)
+numeric_cols = [c for c in df.columns if c not in exclude_from_impute and df[c].dtype in ["float64", "float32", "int64", "int32"]]
+
+missing_before = df[numeric_cols].isnull().sum().sum()
+# Already sorted by [id, wave] in Step 3
+
+# Pass 1: Forward-fill then backward-fill per person (uses nearest wave values)
+grouped = df.groupby("id")[numeric_cols]
+df[numeric_cols] = grouped.ffill().bfill()
+
+# Pass 2: Per-person median (fills columns where person has no data at all in nearby waves)
+person_medians = grouped.transform("median")
+df[numeric_cols] = df[numeric_cols].fillna(person_medians)
+
+# Pass 3: Global median (last resort for persons with zero observations in a column)
+global_medians = df[numeric_cols].median()
+df[numeric_cols] = df[numeric_cols].fillna(global_medians)
+
+missing_after = df[numeric_cols].isnull().sum().sum()
+print(f"Missing values: {missing_before:,} -> {missing_after:,}")
+print(f"Imputed {missing_before - missing_after:,} values")
+
+# ---------------------------------------------------------------------------
+# Step 6: Prepare features and target
+# ---------------------------------------------------------------------------
+print("\n" + "=" * 60)
+print("Step 6: Preparing features and target")
 print("=" * 60)
 
 df = df.dropna(subset=[TARGET_COL])
@@ -201,10 +238,10 @@ print(y.value_counts().to_string())
 print(f"Positive rate: {y.mean():.4f}")
 
 # ---------------------------------------------------------------------------
-# Step 6: Train / Val / Test split (60/20/20)
+# Step 7: Train / Val / Test split (60/20/20)
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 60)
-print("Step 6: Train/Val/Test split (60/20/20)")
+print("Step 7: Train/Val/Test split (60/20/20)")
 print("=" * 60)
 
 X_train_val, X_test, y_train_val, y_test = train_test_split(
@@ -220,10 +257,28 @@ print(f"Val:   {X_val.shape[0]} rows (pos: {y_val.sum()}, neg: {(y_val==0).sum()
 print(f"Test:  {X_test.shape[0]} rows (pos: {y_test.sum()}, neg: {(y_test==0).sum()})")
 
 # ---------------------------------------------------------------------------
-# Step 7: Train XGBoost
+# Step 8: ADASYN Oversample minority class in training data
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 60)
-print("Step 7: Training XGBoost")
+print("Step 8: ADASYN Oversampling minority class (training only)")
+print("=" * 60)
+
+adasyn = ADASYN(sampling_strategy=2/3, random_state=RANDOM_STATE, n_neighbors=5)
+X_train_ada, y_train_ada = adasyn.fit_resample(X_train, y_train)
+
+print(f"After ADASYN oversampling:")
+print(f"  Train: {X_train_ada.shape[0]} rows (pos: {y_train_ada.sum()}, neg: {(y_train_ada==0).sum()})")
+print(f"  Ratio: {(y_train_ada==0).sum() / y_train_ada.sum():.1f}:1 (neg:pos)")
+print(f"  Val/Test: unchanged (original distribution)")
+
+X_train = X_train_ada
+y_train = y_train_ada
+
+# ---------------------------------------------------------------------------
+# Step 9: Train XGBoost
+# ---------------------------------------------------------------------------
+print("\n" + "=" * 60)
+print("Step 9: Training XGBoost")
 print("=" * 60)
 
 neg_count = (y_train == 0).sum()
@@ -252,10 +307,10 @@ model.fit(
 )
 
 # ---------------------------------------------------------------------------
-# Step 8: Threshold tuning (val) + Evaluation (test)
+# Step 10: Threshold tuning (val) + Evaluation (test)
 # ---------------------------------------------------------------------------
 print("\n" + "=" * 60)
-print("Step 8: Threshold tuning (val) + Evaluation (test)")
+print("Step 10: Threshold tuning (val) + Evaluation (test)")
 print("=" * 60)
 
 # Tune threshold on validation set
