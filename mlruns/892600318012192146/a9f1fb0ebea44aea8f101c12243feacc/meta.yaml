@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/mlruns/892600318012192146/a9f1fb0ebea44aea8f101c12243feacc/artifacts
+end_time: 1771109785729
+entry_point_name: ''
+experiment_id: '892600318012192146'
+lifecycle_stage: active
+run_id: a9f1fb0ebea44aea8f101c12243feacc
+run_name: diabetes_catboost_15feat_89504train_20260214_235625
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771109785673
+status: 3
+tags: []
+user_id: cirogam

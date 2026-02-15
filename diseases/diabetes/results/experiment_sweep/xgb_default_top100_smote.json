@@ -1,0 +1,26 @@
+{
+  "experiment_name": "xgb_default_top100_smote",
+  "model_type": "xgboost",
+  "model_params": {
+    "n_estimators": 200,
+    "learning_rate": 0.05,
+    "max_depth": 7,
+    "min_child_weight": 3,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8,
+    "gamma": 0.1
+  },
+  "feature_subset": "top100",
+  "n_features": 100,
+  "use_smote": true,
+  "class_weight": 1.5009628654876914,
+  "training_time_sec": 2.5298359394073486,
+  "metrics": {
+    "ROC_AUC": 0.7359,
+    "PR_AUC": 0.164,
+    "F2_score": 0.3662,
+    "best_threshold": 0.11,
+    "n_samples": 25089,
+    "n_positive": 1706
+  }
+}

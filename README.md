@@ -41,6 +41,8 @@ python scripts/run_disease.py diabetes
 python scripts/run_disease.py diseases/diabetes/config.yaml
 ```
 
+**Optional — merged table with family features:** After step 4, run `python scripts/merge_fam_into_model.py` to produce `data/rand_hrs_model_merged.parquet` (model table + `fam_aggregated_filtered.pkl` joined on `id`). Then train on it with: `MODEL_TABLE=rand_hrs_model_merged.parquet python scripts/run_disease.py diabetes`.
+
 The shared runner takes either a **disease name** (loads `diseases/<name>/config.yaml`) or a **config path**. It uses all non-target columns as features (or `feature_columns` in config to restrict), trains, writes `model/<disease>_*.json` and `model/<disease>_*_importances.csv`, and logs to MLflow. To add another disease, add `diseases/<name>/config.yaml` and run `python scripts/run_disease.py <name>` or `python scripts/run_disease.py diseases/<name>/config.yaml`.
 
 ---

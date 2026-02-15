@@ -1,0 +1,35 @@
+{
+  "experiment_name": "resnet_2blocks_baseline",
+  "architecture": {
+    "type": "resnet",
+    "n_blocks": 2,
+    "hidden_dim": 256,
+    "name": "resnet_2blocks"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 16,
+  "training_time_sec": 88.01195073127747,
+  "total_time_sec": 88.04406189918518,
+  "metrics": {
+    "ROC_AUC": 0.6984,
+    "PR_AUC": 0.1236,
+    "F2_score": 0.3457,
+    "best_threshold": 0.14,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

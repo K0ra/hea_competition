@@ -1,0 +1,33 @@
+{
+  "disease": "diabetes",
+  "target_suffix": "DIABE",
+  "target_col": "target_DIABE",
+  "feature_columns": [
+    "wave",
+    "BMI",
+    "WEIGHT",
+    "DIAB",
+    "MOMAGE",
+    "DIABF",
+    "DADAGE",
+    "fam_KAEDUC_mean",
+    "fam_kid_avg_birth_year"
+  ],
+  "n_train": 89504,
+  "n_val": 35941,
+  "model_type": "xgboost",
+  "params": {
+    "n_estimators": 500,
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "top_n": 8,
+    "min_importance": null
+  },
+  "metrics": {
+    "ROC_AUC": 0.6711,
+    "PR_AUC": 0.1524,
+    "F2_score": 0.3494,
+    "best_F2_threshold": 0.49
+  },
+  "duration_sec": 1.6
+}

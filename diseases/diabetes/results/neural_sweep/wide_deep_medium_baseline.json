@@ -1,0 +1,37 @@
+{
+  "experiment_name": "wide_deep_medium_baseline",
+  "architecture": {
+    "type": "wide_deep",
+    "deep_dims": [
+      256,
+      128
+    ],
+    "name": "wide_deep_medium"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 26,
+  "training_time_sec": 74.26773881912231,
+  "total_time_sec": 74.30421304702759,
+  "metrics": {
+    "ROC_AUC": 0.7223,
+    "PR_AUC": 0.1535,
+    "F2_score": 0.358,
+    "best_threshold": 0.11,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

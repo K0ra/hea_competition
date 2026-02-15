@@ -32,7 +32,7 @@ from shared.train_eval import MODELS_REQUIRE_COMPLETE_CASES, train_eval_one  # n
 REPO_DIR = _repo_dir
 DATA_DIR = REPO_DIR / "data"
 MODEL_DIR = REPO_DIR / "model"
-MODEL_TABLE_PATH = DATA_DIR / "rand_hrs_model_sample.parquet"
+MODEL_TABLE_PATH = DATA_DIR / os.environ.get("MODEL_TABLE", "rand_hrs_model_sample.parquet")
 
 
 def run(config_path: Path, disease: str) -> None:

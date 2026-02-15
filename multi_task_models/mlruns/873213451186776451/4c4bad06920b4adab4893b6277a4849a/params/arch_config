@@ -1,0 +1,1 @@
+{"type": "mlp", "hidden_dims": [128, 64, 32], "name": "mlp_deep_narrow"}

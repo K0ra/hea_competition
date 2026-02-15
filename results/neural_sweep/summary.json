@@ -1,0 +1,257 @@
+[
+  {
+    "experiment_name": "mlp_shallow_wide_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_medium_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_narrow_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_very_deep_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "resnet_2blocks_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "resnet_3blocks_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "resnet_4blocks_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "attention_256_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "attention_512_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "wide_deep_medium_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "wide_deep_large_baseline",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_d0.1_wd1e-05_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_d0.2_wd1e-04_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_d0.4_wd1e-03_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_d0.3_wd1e-04_nobn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_d0.1_wd1e-05_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_d0.2_wd1e-04_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_d0.4_wd1e-03_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_d0.3_wd1e-04_nobn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_d0.1_wd1e-05_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_d0.2_wd1e-04_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_d0.4_wd1e-03_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_d0.3_wd1e-04_nobn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_medium_d0.1_wd1e-05_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_medium_d0.2_wd1e-04_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_medium_d0.4_wd1e-03_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_medium_d0.3_wd1e-04_nobn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_narrow_d0.1_wd1e-05_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_narrow_d0.2_wd1e-04_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_narrow_d0.4_wd1e-03_bn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_narrow_d0.3_wd1e-04_nobn",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_lr1e-03_bs256_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_lr1e-04_bs512_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_lr1e-03_bs512_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_lr1e-03_bs1024_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_lr1e-03_bs256_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_lr1e-04_bs512_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_lr1e-03_bs512_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_lr1e-03_bs1024_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_lr1e-03_bs256_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_lr1e-04_bs512_adam",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_lr1e-03_bs512_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_deep_wide_lr1e-03_bs1024_adamw",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_focal",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_focal_weighted",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_wide_weighted_bce_smote",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_focal",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_focal_weighted",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  },
+  {
+    "experiment_name": "mlp_shallow_narrow_weighted_bce_smote",
+    "status": "failed",
+    "error": "prepare_train_val_split() got an unexpected keyword argument 'train_waves'"
+  }
+]

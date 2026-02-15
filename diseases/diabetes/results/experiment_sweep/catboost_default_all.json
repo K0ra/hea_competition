@@ -1,0 +1,24 @@
+{
+  "experiment_name": "catboost_default_all",
+  "model_type": "catboost",
+  "model_params": {
+    "iterations": 200,
+    "learning_rate": 0.05,
+    "depth": 7,
+    "l2_leaf_reg": 3,
+    "subsample": 0.8
+  },
+  "feature_subset": "all",
+  "n_features": 288,
+  "use_smote": false,
+  "class_weight": 1.5009628654876914,
+  "training_time_sec": 10.697618007659912,
+  "metrics": {
+    "ROC_AUC": 0.7347,
+    "PR_AUC": 0.1757,
+    "F2_score": 0.3665,
+    "best_threshold": 0.11,
+    "n_samples": 25089,
+    "n_positive": 1706
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "experiment_name": "mlp_very_deep_baseline",
+  "architecture": {
+    "type": "mlp",
+    "hidden_dims": [
+      512,
+      256,
+      128,
+      64
+    ],
+    "name": "mlp_very_deep"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 17,
+  "training_time_sec": 576.4389019012451,
+  "total_time_sec": 579.0899388790131,
+  "aggregate_metrics": {
+    "mean_roc_auc": 0.6792,
+    "mean_pr_auc": 0.16393749999999999,
+    "mean_f2_score": 0.3032125,
+    "std_roc_auc": 0.04295605312409418,
+    "std_pr_auc": 0.05876584759662708,
+    "std_f2_score": 0.16422771871322456
+  },
+  "per_task_metrics": {
+    "DIABE": {
+      "ROC_AUC": 0.6901,
+      "PR_AUC": 0.1601,
+      "F2_score": 0.351,
+      "best_threshold": 0.1,
+      "n_samples": 35941,
+      "n_positive": 2795
+    },
+    "HIBPE": {
+      "ROC_AUC": 0.6311,
+      "PR_AUC": 0.2531,
+      "F2_score": 0.5298,
+      "best_threshold": 0.16,
+      "n_samples": 20150,
+      "n_positive": 3537
+    },
+    "CANCR": {
+      "ROC_AUC": 0.6331,
+      "PR_AUC": 0.0957,
+      "F2_score": 0.1272,
+      "best_threshold": 0.1,
+      "n_samples": 39803,
+      "n_positive": 2206
+    },
+    "LUNGE": {
+      "ROC_AUC": 0.7108,
+      "PR_AUC": 0.1006,
+      "F2_score": 0.0856,
+      "best_threshold": 0.1,
+      "n_samples": 42276,
+      "n_positive": 1637
+    },
+    "HEARTE": {
+      "ROC_AUC": 0.7057,
+      "PR_AUC": 0.1888,
+      "F2_score": 0.3919,
+      "best_threshold": 0.1,
+      "n_samples": 36949,
+      "n_positive": 3249
+    },
+    "STROKE": {
+      "ROC_AUC": 0.7415,
+      "PR_AUC": 0.1316,
+      "F2_score": 0.2269,
+      "best_threshold": 0.1,
+      "n_samples": 42841,
+      "n_positive": 1609
+    },
+    "PSYCHE": {
+      "ROC_AUC": 0.705,
+      "PR_AUC": 0.128,
+      "F2_score": 0.1772,
+      "best_threshold": 0.1,
+      "n_samples": 38114,
+      "n_positive": 1962
+    },
+    "ARTHRE": {
+      "ROC_AUC": 0.6163,
+      "PR_AUC": 0.2536,
+      "F2_score": 0.5361,
+      "best_threshold": 0.11,
+      "n_samples": 21395,
+      "n_positive": 3885
+    }
+  }
+}

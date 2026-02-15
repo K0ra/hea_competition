@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/mlruns/728566694669053845/da220ac3d65b4a71b27f544298b0544e/artifacts
+end_time: 1771110621311
+entry_point_name: ''
+experiment_id: '728566694669053845'
+lifecycle_stage: active
+run_id: da220ac3d65b4a71b27f544298b0544e
+run_name: multi_lgbm_9feat_20260215_001020
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771110620949
+status: 3
+tags: []
+user_id: cirogam

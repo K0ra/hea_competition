@@ -1,0 +1,17 @@
+# Requirements for Neural Network Standalone Experiment Script
+# Install with: pip install -r requirements_standalone.txt
+
+# Deep Learning
+torch>=2.0.0
+
+# Data Processing
+numpy>=1.21.0
+pandas>=1.3.0
+
+# Machine Learning
+scikit-learn>=1.0.0
+imbalanced-learn>=0.9.0
+
+# Optional but recommended for better performance
+# Uncomment if available on your system:
+# torchvision>=0.15.0  # If using image data (not needed for this project)

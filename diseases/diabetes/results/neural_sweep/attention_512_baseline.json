@@ -1,0 +1,34 @@
+{
+  "experiment_name": "attention_512_baseline",
+  "architecture": {
+    "type": "attention",
+    "hidden_dim": 512,
+    "name": "attention_512"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 17,
+  "training_time_sec": 59.6931209564209,
+  "total_time_sec": 59.72788619995117,
+  "metrics": {
+    "ROC_AUC": 0.7093,
+    "PR_AUC": 0.1495,
+    "F2_score": 0.3563,
+    "best_threshold": 0.61,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

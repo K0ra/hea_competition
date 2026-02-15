@@ -1,0 +1,37 @@
+{
+  "experiment_name": "mlp_shallow_wide_baseline",
+  "architecture": {
+    "type": "mlp",
+    "hidden_dims": [
+      256,
+      128
+    ],
+    "name": "mlp_shallow_wide"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 26,
+  "training_time_sec": 62.25450682640076,
+  "total_time_sec": 62.28767418861389,
+  "metrics": {
+    "ROC_AUC": 0.7149,
+    "PR_AUC": 0.15,
+    "F2_score": 0.3532,
+    "best_threshold": 0.14,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}
