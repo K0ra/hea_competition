@@ -1,0 +1,24 @@
+{
+  "experiment_name": "catboost_default_top100_smote",
+  "model_type": "catboost",
+  "model_params": {
+    "iterations": 200,
+    "learning_rate": 0.05,
+    "depth": 7,
+    "l2_leaf_reg": 3,
+    "subsample": 0.8
+  },
+  "feature_subset": "top100",
+  "n_features": 100,
+  "use_smote": true,
+  "class_weight": 1.5009628654876914,
+  "training_time_sec": 5.588793039321899,
+  "metrics": {
+    "ROC_AUC": 0.7248,
+    "PR_AUC": 0.1538,
+    "F2_score": 0.36,
+    "best_threshold": 0.12,
+    "n_samples": 25089,
+    "n_positive": 1706
+  }
+}

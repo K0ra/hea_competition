@@ -1,0 +1,17 @@
+# Sample batch: feature set A (first variant), LR. Use with --skip-data after phase2_50k.
+# Run: python scripts/run_experiment.py --config config/experiments/sample_feat_set_A_lr.yaml --skip-data
+name: sample_feat_set_A_lr
+feature_set_id: feat_set_A
+sample_rows: 50000
+feature_columns:
+  - wave
+  - AGEY_B
+  - BMI
+  - MSTAT
+  - CESD
+  - HIBPE
+  - SHLT
+  - MOBILA
+model:
+  type: lr
+  params: {}

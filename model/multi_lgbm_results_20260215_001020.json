@@ -1,0 +1,99 @@
+{
+  "timestamp": "20260215_001020",
+  "model_type": "multi_output_lgbm",
+  "n_tasks": 8,
+  "n_features": 9,
+  "hyperparameters": {
+    "max_depth": 6,
+    "learning_rate": 0.05,
+    "n_estimators": 100
+  },
+  "per_task_results": {
+    "DIABE": {
+      "ROC_AUC": 0.6793,
+      "PR_AUC": 0.1554,
+      "F2_score": 0.3545,
+      "best_threshold": 0.46,
+      "n_samples": 35941,
+      "n_positive": 2795,
+      "class_weight": 14.603905160390516,
+      "train_time": 0.2818460464477539
+    },
+    "HIBPE": {
+      "ROC_AUC": 0.5888,
+      "PR_AUC": 0.2301,
+      "F2_score": 0.516,
+      "best_threshold": 0.17,
+      "n_samples": 20150,
+      "n_positive": 3537,
+      "class_weight": 4.299267330452752,
+      "train_time": 0.6471750736236572
+    },
+    "CANCR": {
+      "ROC_AUC": 0.5844,
+      "PR_AUC": 0.0776,
+      "F2_score": 0.2358,
+      "best_threshold": 0.45,
+      "n_samples": 39803,
+      "n_positive": 2206,
+      "class_weight": 15.332568807339449,
+      "train_time": 0.7016339302062988
+    },
+    "LUNGE": {
+      "ROC_AUC": 0.6321,
+      "PR_AUC": 0.0607,
+      "F2_score": 0.2048,
+      "best_threshold": 0.48,
+      "n_samples": 42276,
+      "n_positive": 1637,
+      "class_weight": 25.712380952380954,
+      "train_time": 0.7207551002502441
+    },
+    "HEARTE": {
+      "ROC_AUC": 0.6479,
+      "PR_AUC": 0.1445,
+      "F2_score": 0.358,
+      "best_threshold": 0.39,
+      "n_samples": 36949,
+      "n_positive": 3249,
+      "class_weight": 9.890513733468973,
+      "train_time": 0.6963341236114502
+    },
+    "STROKE": {
+      "ROC_AUC": 0.6685,
+      "PR_AUC": 0.0773,
+      "F2_score": 0.219,
+      "best_threshold": 0.39,
+      "n_samples": 42841,
+      "n_positive": 1609,
+      "class_weight": 22.224864610313162,
+      "train_time": 0.7102110385894775
+    },
+    "PSYCHE": {
+      "ROC_AUC": 0.593,
+      "PR_AUC": 0.0704,
+      "F2_score": 0.2288,
+      "best_threshold": 0.44,
+      "n_samples": 38114,
+      "n_positive": 1962,
+      "class_weight": 19.19085788561525,
+      "train_time": 0.6956312656402588
+    },
+    "ARTHRE": {
+      "ROC_AUC": 0.569,
+      "PR_AUC": 0.2238,
+      "F2_score": 0.5259,
+      "best_threshold": 0.13,
+      "n_samples": 21395,
+      "n_positive": 3885,
+      "class_weight": 4.134806849860613,
+      "train_time": 0.6169862747192383
+    }
+  },
+  "aggregate_metrics": {
+    "mean_ROC_AUC": 0.6203749999999999,
+    "mean_PR_AUC": 0.129975,
+    "mean_F2": 0.33035000000000003
+  },
+  "total_duration_sec": 5.242613077163696
+}

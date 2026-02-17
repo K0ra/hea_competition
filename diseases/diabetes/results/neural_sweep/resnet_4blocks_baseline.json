@@ -1,0 +1,35 @@
+{
+  "experiment_name": "resnet_4blocks_baseline",
+  "architecture": {
+    "type": "resnet",
+    "n_blocks": 4,
+    "hidden_dim": 256,
+    "name": "resnet_4blocks"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 20,
+  "training_time_sec": 203.69235825538635,
+  "total_time_sec": 203.7742190361023,
+  "metrics": {
+    "ROC_AUC": 0.7057,
+    "PR_AUC": 0.1427,
+    "F2_score": 0.3453,
+    "best_threshold": 0.11,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

@@ -1,0 +1,14 @@
+artifact_uri: file:///Users/cirogam/Desktop/hea_hackathon/hea_competition/multi_task_models/mlruns/873213451186776451/66e7826445ba44eabd4d2f79d419f2fd/artifacts
+end_time: 1771115221104
+entry_point_name: ''
+experiment_id: '873213451186776451'
+lifecycle_stage: active
+run_id: 66e7826445ba44eabd4d2f79d419f2fd
+run_name: resnet_4blocks_baseline
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1771115220829
+status: 3
+tags: []
+user_id: cirogam

@@ -1,0 +1,10 @@
+sample_rows: 50000
+feature_columns:
+- wave
+- AGEY_B
+- BMI
+- MSTAT
+- CESD
+- HIBPE
+- SHLT
+- MOBILA

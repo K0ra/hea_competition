@@ -1,0 +1,38 @@
+{
+  "experiment_name": "mlp_deep_wide_PRIORITY",
+  "architecture": {
+    "type": "mlp",
+    "hidden_dims": [
+      512,
+      256,
+      128
+    ],
+    "name": "mlp_deep_wide_PRIORITY"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 41,
+  "training_time_sec": 136.96683621406555,
+  "total_time_sec": 137.667475938797,
+  "metrics": {
+    "ROC_AUC": 0.7297,
+    "PR_AUC": 0.1656,
+    "F2_score": 0.3595,
+    "best_threshold": 0.12,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

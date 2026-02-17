@@ -1,0 +1,39 @@
+{
+  "experiment_name": "mlp_very_deep_baseline",
+  "architecture": {
+    "type": "mlp",
+    "hidden_dims": [
+      512,
+      256,
+      128,
+      64
+    ],
+    "name": "mlp_very_deep"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 47,
+  "training_time_sec": 191.83418607711792,
+  "total_time_sec": 191.86836409568787,
+  "metrics": {
+    "ROC_AUC": 0.7284,
+    "PR_AUC": 0.1642,
+    "F2_score": 0.3677,
+    "best_threshold": 0.1,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

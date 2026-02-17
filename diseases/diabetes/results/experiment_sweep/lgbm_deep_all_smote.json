@@ -1,0 +1,26 @@
+{
+  "experiment_name": "lgbm_deep_all_smote",
+  "model_type": "lgbm",
+  "model_params": {
+    "n_estimators": 300,
+    "learning_rate": 0.03,
+    "max_depth": 10,
+    "num_leaves": 63,
+    "min_child_samples": 15,
+    "subsample": 0.8,
+    "colsample_bytree": 0.8
+  },
+  "feature_subset": "all",
+  "n_features": 288,
+  "use_smote": true,
+  "class_weight": 1.5009628654876914,
+  "training_time_sec": 10.009331941604614,
+  "metrics": {
+    "ROC_AUC": 0.7591,
+    "PR_AUC": 0.2002,
+    "F2_score": 0.3864,
+    "best_threshold": 0.12,
+    "n_samples": 25089,
+    "n_positive": 1706
+  }
+}

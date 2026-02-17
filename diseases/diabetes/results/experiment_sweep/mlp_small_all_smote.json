@@ -1,0 +1,31 @@
+{
+  "experiment_name": "mlp_small_all_smote",
+  "model_type": "mlp",
+  "model_params": {
+    "hidden_layer_sizes": [
+      128,
+      64
+    ],
+    "activation": "relu",
+    "solver": "adam",
+    "alpha": 0.0001,
+    "batch_size": 256,
+    "learning_rate_init": 0.001,
+    "max_iter": 200,
+    "early_stopping": true,
+    "validation_fraction": 0.1
+  },
+  "feature_subset": "all",
+  "n_features": 288,
+  "use_smote": true,
+  "class_weight": 1.5009628654876914,
+  "training_time_sec": 32.29811191558838,
+  "metrics": {
+    "ROC_AUC": 0.67,
+    "PR_AUC": 0.1353,
+    "F2_score": 0.2092,
+    "best_threshold": 0.1,
+    "n_samples": 25089,
+    "n_positive": 1706
+  }
+}

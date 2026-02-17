@@ -1,0 +1,1 @@
+{"type": "resnet", "n_blocks": 3, "hidden_dim": 256, "name": "resnet_3blocks"}

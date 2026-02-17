@@ -1,0 +1,1 @@
+{"type": "wide_deep", "deep_dims": [512, 256, 128], "name": "wide_deep_large"}

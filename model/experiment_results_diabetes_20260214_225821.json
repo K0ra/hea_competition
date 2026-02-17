@@ -1,0 +1,594 @@
+[
+  {
+    "name": "xgb_baseline_top8",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 500,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 14.6,
+      "tree_method": "hist"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 2.0,
+    "ROC_AUC": 0.6406,
+    "PR_AUC": 0.1367,
+    "F2_score": 0.3278,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "xgb_baseline_top8_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 500,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 14.6,
+      "tree_method": "hist"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.8,
+    "ROC_AUC": 0.6406,
+    "PR_AUC": 0.1367,
+    "F2_score": 0.3278,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "xgb_aggressive_top8",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 1000,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "scale_pos_weight": 14.6,
+      "gamma": 2,
+      "tree_method": "hist"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.8,
+    "ROC_AUC": 0.6357,
+    "PR_AUC": 0.1333,
+    "F2_score": 0.3242,
+    "best_F2_threshold": 0.37
+  },
+  {
+    "name": "xgb_aggressive_top8_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 1000,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "scale_pos_weight": 14.6,
+      "gamma": 2,
+      "tree_method": "hist"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.8,
+    "ROC_AUC": 0.6357,
+    "PR_AUC": 0.1333,
+    "F2_score": 0.3242,
+    "best_F2_threshold": 0.37
+  },
+  {
+    "name": "catboost_default_top8",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.2,
+    "ROC_AUC": 0.676,
+    "PR_AUC": 0.153,
+    "F2_score": 0.3496,
+    "best_F2_threshold": 0.5
+  },
+  {
+    "name": "catboost_default_top8_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.7,
+    "ROC_AUC": 0.676,
+    "PR_AUC": 0.153,
+    "F2_score": 0.3496,
+    "best_F2_threshold": 0.5
+  },
+  {
+    "name": "lgbm_default_top8",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 0.5,
+    "ROC_AUC": 0.6793,
+    "PR_AUC": 0.1545,
+    "F2_score": 0.3554,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "lgbm_default_top8_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top8",
+    "n_features": 8,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 0.4,
+    "ROC_AUC": 0.6793,
+    "PR_AUC": 0.1545,
+    "F2_score": 0.3554,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "mlp_simple_top8",
+    "error": "Input X contains NaN.\nMLPClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "mlp_simple_top8_smote",
+    "error": "Input X contains NaN.\nMLPClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_baseline_top50",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 500,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 14.6,
+      "tree_method": "hist"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.8,
+    "ROC_AUC": 0.6387,
+    "PR_AUC": 0.1428,
+    "F2_score": 0.3242,
+    "best_F2_threshold": 0.36
+  },
+  {
+    "name": "xgb_baseline_top50_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 500,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "scale_pos_weight": 14.6,
+      "tree_method": "hist"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.8,
+    "ROC_AUC": 0.6387,
+    "PR_AUC": 0.1428,
+    "F2_score": 0.3242,
+    "best_F2_threshold": 0.36
+  },
+  {
+    "name": "xgb_aggressive_top50",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 1000,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "scale_pos_weight": 14.6,
+      "gamma": 2,
+      "tree_method": "hist"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.9,
+    "ROC_AUC": 0.6289,
+    "PR_AUC": 0.137,
+    "F2_score": 0.3169,
+    "best_F2_threshold": 0.24
+  },
+  {
+    "name": "xgb_aggressive_top50_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "xgboost",
+    "model_params": {
+      "n_estimators": 1000,
+      "max_depth": 10,
+      "learning_rate": 0.1,
+      "scale_pos_weight": 14.6,
+      "gamma": 2,
+      "tree_method": "hist"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.9,
+    "ROC_AUC": 0.6289,
+    "PR_AUC": 0.137,
+    "F2_score": 0.3169,
+    "best_F2_threshold": 0.24
+  },
+  {
+    "name": "catboost_default_top50",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.1,
+    "ROC_AUC": 0.6779,
+    "PR_AUC": 0.1536,
+    "F2_score": 0.3524,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "catboost_default_top50_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.2,
+    "ROC_AUC": 0.6779,
+    "PR_AUC": 0.1536,
+    "F2_score": 0.3524,
+    "best_F2_threshold": 0.48
+  },
+  {
+    "name": "lgbm_default_top50",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 0.4,
+    "ROC_AUC": 0.6793,
+    "PR_AUC": 0.1554,
+    "F2_score": 0.3545,
+    "best_F2_threshold": 0.46
+  },
+  {
+    "name": "lgbm_default_top50_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50",
+    "n_features": 9,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 0.4,
+    "ROC_AUC": 0.6793,
+    "PR_AUC": 0.1554,
+    "F2_score": 0.3545,
+    "best_F2_threshold": 0.46
+  },
+  {
+    "name": "mlp_simple_top50",
+    "error": "Input X contains NaN.\nMLPClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "mlp_simple_top50_smote",
+    "error": "Input X contains NaN.\nMLPClassifier does not accept missing values encoded as NaN natively. For supervised learning, you might want to consider sklearn.ensemble.HistGradientBoostingClassifier and Regressor which accept missing values encoded as NaNs natively. Alternatively, it is possible to preprocess the data, for instance by using an imputer transformer in a pipeline or drop samples with missing values. See https://scikit-learn.org/stable/modules/impute.html You can find a list of all estimators that handle NaN values at the following page: https://scikit-learn.org/stable/modules/impute.html#estimators-that-handle-nan-values",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_baseline_min_imp_5",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_baseline_min_imp_5_smote",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_aggressive_min_imp_5",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_aggressive_min_imp_5_smote",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "catboost_default_min_imp_5",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "catboost_default_min_imp_5_smote",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "lgbm_default_min_imp_5",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "lgbm_default_min_imp_5_smote",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "mlp_simple_min_imp_5",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "mlp_simple_min_imp_5_smote",
+    "error": "No features available",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_baseline_top50_plus_temporal",
+    "error": "[22:58:10] /Users/runner/work/xgboost/xgboost/src/data/gradient_index.h:100: Check failed: valid: Input data contains `inf` or a value too large, while `missing` is not set to `inf`\nStack trace:\n  [bt] (0) 1   libxgboost.dylib                    0x000000013d3512dc dmlc::LogMessageFatal::~LogMessageFatal() + 124\n  [bt] (1) 2   libxgboost.dylib                    0x000000013d54177c void xgboost::GHistIndexMatrix::SetIndexData<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, unsigned int, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&), xgboost::data::IsValidFunctor&>(xgboost::common::Span<xgboost::data::IsValidFunctor&, 18446744073709551615ul>, unsigned long, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, xgboost::data::IsValidFunctor&, unsigned long, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&)&&) + 328\n  [bt] (2) 3   libxgboost.dylib                    0x000000013d5402e0 void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>) + 408\n  [bt] (3) 4   libxgboost.dylib                    0x000000013d53fdbc void xgboost::GHistIndexMatrix::PushAdapterBatch<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>>(xgboost::Context const*, unsigned long, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, float, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, double, unsigned long long) + 304\n  [bt] (4) 5   libxgboost.dylib                    0x000000013d5477ac xgboost::data::IterativeDMatrix::InitFromCPU(xgboost::Context const*, xgboost::BatchParam const&, xgboost::data::DataIterProxy<void (void*), int (void*)>&&, float, std::__1::shared_ptr<xgboost::DMatrix>) + 2364\n  [bt] (5) 6   libxgboost.dylib                    0x000000013d546a14 xgboost::data::IterativeDMatrix::IterativeDMatrix(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 908\n  [bt] (6) 7   libxgboost.dylib                    0x000000013d4d91f0 xgboost::DMatrix* xgboost::DMatrix::Create<void*, void*, void (void*), int (void*)>(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 152\n  [bt] (7) 8   libxgboost.dylib                    0x000000013d35b640 XGQuantileDMatrixCreateFromCallback + 520\n  [bt] (8) 9   libffi.dylib                        0x00000001ac658050 ffi_call_SYSV + 80\n\n",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_baseline_top50_plus_temporal_smote",
+    "error": "[22:58:10] /Users/runner/work/xgboost/xgboost/src/data/gradient_index.h:100: Check failed: valid: Input data contains `inf` or a value too large, while `missing` is not set to `inf`\nStack trace:\n  [bt] (0) 1   libxgboost.dylib                    0x000000013d3512dc dmlc::LogMessageFatal::~LogMessageFatal() + 124\n  [bt] (1) 2   libxgboost.dylib                    0x000000013d54177c void xgboost::GHistIndexMatrix::SetIndexData<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, unsigned int, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&), xgboost::data::IsValidFunctor&>(xgboost::common::Span<xgboost::data::IsValidFunctor&, 18446744073709551615ul>, unsigned long, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, xgboost::data::IsValidFunctor&, unsigned long, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&)&&) + 328\n  [bt] (2) 3   libxgboost.dylib                    0x000000013d5402e0 void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>) + 408\n  [bt] (3) 4   libxgboost.dylib                    0x000000013d53fdbc void xgboost::GHistIndexMatrix::PushAdapterBatch<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>>(xgboost::Context const*, unsigned long, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, float, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, double, unsigned long long) + 304\n  [bt] (4) 5   libxgboost.dylib                    0x000000013d5477ac xgboost::data::IterativeDMatrix::InitFromCPU(xgboost::Context const*, xgboost::BatchParam const&, xgboost::data::DataIterProxy<void (void*), int (void*)>&&, float, std::__1::shared_ptr<xgboost::DMatrix>) + 2364\n  [bt] (5) 6   libxgboost.dylib                    0x000000013d546a14 xgboost::data::IterativeDMatrix::IterativeDMatrix(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 908\n  [bt] (6) 7   libxgboost.dylib                    0x000000013d4d91f0 xgboost::DMatrix* xgboost::DMatrix::Create<void*, void*, void (void*), int (void*)>(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 152\n  [bt] (7) 8   libxgboost.dylib                    0x000000013d35b640 XGQuantileDMatrixCreateFromCallback + 520\n  [bt] (8) 9   libffi.dylib                        0x00000001ac658050 ffi_call_SYSV + 80\n\n",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_aggressive_top50_plus_temporal",
+    "error": "[22:58:11] /Users/runner/work/xgboost/xgboost/src/data/gradient_index.h:100: Check failed: valid: Input data contains `inf` or a value too large, while `missing` is not set to `inf`\nStack trace:\n  [bt] (0) 1   libxgboost.dylib                    0x000000013d3512dc dmlc::LogMessageFatal::~LogMessageFatal() + 124\n  [bt] (1) 2   libxgboost.dylib                    0x000000013d54177c void xgboost::GHistIndexMatrix::SetIndexData<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, unsigned int, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&), xgboost::data::IsValidFunctor&>(xgboost::common::Span<xgboost::data::IsValidFunctor&, 18446744073709551615ul>, unsigned long, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, xgboost::data::IsValidFunctor&, unsigned long, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&)&&) + 328\n  [bt] (2) 3   libxgboost.dylib                    0x000000013d5402e0 void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>) + 408\n  [bt] (3) 4   libxgboost.dylib                    0x000000013d53fdbc void xgboost::GHistIndexMatrix::PushAdapterBatch<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>>(xgboost::Context const*, unsigned long, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, float, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, double, unsigned long long) + 304\n  [bt] (4) 5   libxgboost.dylib                    0x000000013d5477ac xgboost::data::IterativeDMatrix::InitFromCPU(xgboost::Context const*, xgboost::BatchParam const&, xgboost::data::DataIterProxy<void (void*), int (void*)>&&, float, std::__1::shared_ptr<xgboost::DMatrix>) + 2364\n  [bt] (5) 6   libxgboost.dylib                    0x000000013d546a14 xgboost::data::IterativeDMatrix::IterativeDMatrix(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 908\n  [bt] (6) 7   libxgboost.dylib                    0x000000013d4d91f0 xgboost::DMatrix* xgboost::DMatrix::Create<void*, void*, void (void*), int (void*)>(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 152\n  [bt] (7) 8   libxgboost.dylib                    0x000000013d35b640 XGQuantileDMatrixCreateFromCallback + 520\n  [bt] (8) 9   libffi.dylib                        0x00000001ac658050 ffi_call_SYSV + 80\n\n",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "xgb_aggressive_top50_plus_temporal_smote",
+    "error": "[22:58:11] /Users/runner/work/xgboost/xgboost/src/data/gradient_index.h:100: Check failed: valid: Input data contains `inf` or a value too large, while `missing` is not set to `inf`\nStack trace:\n  [bt] (0) 1   libxgboost.dylib                    0x000000013d3512dc dmlc::LogMessageFatal::~LogMessageFatal() + 124\n  [bt] (1) 2   libxgboost.dylib                    0x000000013d54177c void xgboost::GHistIndexMatrix::SetIndexData<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, unsigned int, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&), xgboost::data::IsValidFunctor&>(xgboost::common::Span<xgboost::data::IsValidFunctor&, 18446744073709551615ul>, unsigned long, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, xgboost::data::IsValidFunctor&, unsigned long, void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>)::'lambda'(xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&)&&) + 328\n  [bt] (2) 3   libxgboost.dylib                    0x000000013d5402e0 void xgboost::GHistIndexMatrix::PushBatchImpl<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>, xgboost::data::IsValidFunctor&>(int, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, unsigned long, xgboost::data::IsValidFunctor&, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>) + 408\n  [bt] (3) 4   libxgboost.dylib                    0x000000013d53fdbc void xgboost::GHistIndexMatrix::PushAdapterBatch<xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor>>(xgboost::Context const*, unsigned long, unsigned long, xgboost::data::EncColumnarAdapterBatchImpl<xgboost::NoOpAccessor> const&, float, xgboost::common::Span<xgboost::FeatureType const, 18446744073709551615ul>, double, unsigned long long) + 304\n  [bt] (4) 5   libxgboost.dylib                    0x000000013d5477ac xgboost::data::IterativeDMatrix::InitFromCPU(xgboost::Context const*, xgboost::BatchParam const&, xgboost::data::DataIterProxy<void (void*), int (void*)>&&, float, std::__1::shared_ptr<xgboost::DMatrix>) + 2364\n  [bt] (5) 6   libxgboost.dylib                    0x000000013d546a14 xgboost::data::IterativeDMatrix::IterativeDMatrix(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 908\n  [bt] (6) 7   libxgboost.dylib                    0x000000013d4d91f0 xgboost::DMatrix* xgboost::DMatrix::Create<void*, void*, void (void*), int (void*)>(void*, void*, std::__1::shared_ptr<xgboost::DMatrix>, void (*)(void*), int (*)(void*), float, int, int, long long) + 152\n  [bt] (7) 8   libxgboost.dylib                    0x000000013d35b640 XGQuantileDMatrixCreateFromCallback + 520\n  [bt] (8) 9   libffi.dylib                        0x00000001ac658050 ffi_call_SYSV + 80\n\n",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "catboost_default_top50_plus_temporal",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50_plus_temporal",
+    "n_features": 23,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.3,
+    "ROC_AUC": 0.6893,
+    "PR_AUC": 0.1609,
+    "F2_score": 0.3606,
+    "best_F2_threshold": 0.54
+  },
+  {
+    "name": "catboost_default_top50_plus_temporal_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50_plus_temporal",
+    "n_features": 23,
+    "model_type": "catboost",
+    "model_params": {
+      "iterations": 500,
+      "depth": 8,
+      "learning_rate": 0.05,
+      "auto_class_weights": "Balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 4.3,
+    "ROC_AUC": 0.6893,
+    "PR_AUC": 0.1609,
+    "F2_score": 0.3606,
+    "best_F2_threshold": 0.54
+  },
+  {
+    "name": "lgbm_default_top50_plus_temporal",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50_plus_temporal",
+    "n_features": 23,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": false,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 0.9,
+    "ROC_AUC": 0.6846,
+    "PR_AUC": 0.1669,
+    "F2_score": 0.3514,
+    "best_F2_threshold": 0.52
+  },
+  {
+    "name": "lgbm_default_top50_plus_temporal_smote",
+    "disease": "diabetes",
+    "target_col": "target_DIABE",
+    "feature_set": "top50_plus_temporal",
+    "n_features": 23,
+    "model_type": "lgbm",
+    "model_params": {
+      "n_estimators": 100,
+      "max_depth": 6,
+      "learning_rate": 0.05,
+      "class_weight": "balanced"
+    },
+    "smote": true,
+    "n_train": 89504,
+    "n_val": 35941,
+    "duration_sec": 1.0,
+    "ROC_AUC": 0.6846,
+    "PR_AUC": 0.1669,
+    "F2_score": 0.3514,
+    "best_F2_threshold": 0.52
+  },
+  {
+    "name": "mlp_simple_top50_plus_temporal",
+    "error": "Input X contains infinity or a value too large for dtype('float64').",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  },
+  {
+    "name": "mlp_simple_top50_plus_temporal_smote",
+    "error": "Input X contains infinity or a value too large for dtype('float64').",
+    "ROC_AUC": 0,
+    "PR_AUC": 0,
+    "F2_score": 0
+  }
+]

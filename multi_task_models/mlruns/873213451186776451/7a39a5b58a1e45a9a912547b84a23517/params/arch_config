@@ -1,0 +1,1 @@
+{"type": "mlp", "hidden_dims": [256, 128], "name": "mlp_shallow_wide"}

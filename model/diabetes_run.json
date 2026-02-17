@@ -1,0 +1,39 @@
+{
+  "target": "target_DIABE",
+  "target_suffix": "DIABE",
+  "feature_columns": [
+    "wave",
+    "BMI",
+    "AGEY_B",
+    "HIBPE",
+    "BPSYS",
+    "SHLT",
+    "CESD",
+    "CACT",
+    "CHOLST",
+    "MSTAT",
+    "ADL5A",
+    "MOBILA",
+    "SMOKEN",
+    "BEQ100",
+    "COG27",
+    "ALZHE",
+    "ACGTOT",
+    "BWC20",
+    "AGEY_E",
+    "BPDIA",
+    "HLTHLM",
+    "CESDM",
+    "CACTP",
+    "DRINK"
+  ],
+  "model_type": "lgbm",
+  "model_params": {},
+  "results": {
+    "F2_score": 0.358,
+    "PR_AUC": 0.1407,
+    "ROC_AUC": 0.6808,
+    "best_F2_threshold": 0.489
+  },
+  "duration_sec": 43.9
+}

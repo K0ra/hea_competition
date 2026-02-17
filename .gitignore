@@ -142,6 +142,18 @@ celerybeat.pid
 .envrc
 .venv
 env/
+# Project data (RAND HRS dataset and pipeline outputs)
+data/
+data/randhrs1992_2022v1_SAS/
+*.parquet
+*.pkl
+*.h5
+*.pth
+*.pt
+*.joblib
+mlruns/
+model/*.html
+diseases/**/*.parquet
 venv/
 ENV/
 env.bak/
@@ -208,3 +220,4 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+PROJECT_SUMMARY.md

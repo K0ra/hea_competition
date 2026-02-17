@@ -1,0 +1,35 @@
+{
+  "experiment_name": "resnet_3blocks_baseline",
+  "architecture": {
+    "type": "resnet",
+    "n_blocks": 3,
+    "hidden_dim": 256,
+    "name": "resnet_3blocks"
+  },
+  "regularization": {
+    "dropout": 0.3,
+    "weight_decay": 0.0001,
+    "batch_norm": true
+  },
+  "optimization": {
+    "lr": 0.0003,
+    "batch_size": 512,
+    "optimizer": "adam"
+  },
+  "imbalance": {
+    "loss": "weighted_bce",
+    "use_smote": false
+  },
+  "epochs_trained": 21,
+  "training_time_sec": 160.19962215423584,
+  "total_time_sec": 160.23430585861206,
+  "metrics": {
+    "ROC_AUC": 0.7117,
+    "PR_AUC": 0.1454,
+    "F2_score": 0.3531,
+    "best_threshold": 0.1,
+    "n_samples": 25089,
+    "n_positive": 1706
+  },
+  "class_weight": 1.5009628654876914
+}

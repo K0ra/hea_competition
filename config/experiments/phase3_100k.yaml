@@ -1,0 +1,17 @@
+# Phase 3: More data (100k rows), same features and LR
+# Run: python scripts/run_experiment.py --config config/experiments/phase3_100k.yaml
+# Estimated time: ~8-25 min (full pipeline). Ensure enough RAM.
+name: phase3_100k
+sample_rows: 100000
+feature_columns:
+  - wave
+  - AGEY_B
+  - BMI
+  - MSTAT
+  - CESD
+  - HIBPE
+  - SHLT
+  - MOBILA
+model:
+  type: lr
+  params: {}

@@ -1,0 +1,16 @@
+# Phase 1: Baseline (current setup)
+# Run: python scripts/run_experiment.py --config config/experiments/phase1_baseline.yaml
+name: phase1_baseline
+sample_rows: 10000
+feature_columns:
+  - wave
+  - AGEY_B
+  - BMI
+  - MSTAT
+  - CESD
+  - HIBPE
+  - SHLT
+  - MOBILA
+model:
+  type: lr
+  params: {}
